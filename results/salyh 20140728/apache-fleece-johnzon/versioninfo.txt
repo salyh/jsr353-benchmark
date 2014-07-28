@@ -1,0 +1,2 @@
+https://github.com/salyh/fleece_master/commit/1ac5701ff46132c115a5c12812c1522661bad62e
+https://github.com/salyh/fleece_master/releases/tag/fleece-pre10
