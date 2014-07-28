@@ -21,4 +21,4 @@ Please note: The benchmark may run up to 30 min, so be patient. Especially the f
 
 <b>Please make sure that you have enough RAM available so that the JVM not has to swap. </b>
 
-<a href=„https://github.com/salyh/jsr353-benchmark/wiki“>Results are here</a>
+<a href="https://github.com/salyh/jsr353-benchmark/wiki">Results are here</a><br>
