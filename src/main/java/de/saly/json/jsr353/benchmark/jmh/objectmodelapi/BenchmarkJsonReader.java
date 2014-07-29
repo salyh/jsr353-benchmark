@@ -46,7 +46,6 @@ public class BenchmarkJsonReader {
         return Collections.EMPTY_MAP;
     }
 
-
     public BenchmarkJsonReader() {
         super();
         if (!Charset.defaultCharset().equals(Charset.forName("UTF-8"))) {
@@ -72,13 +71,12 @@ public class BenchmarkJsonReader {
         return jreader;
     }
 
-    //-- read bytes to structure
+    // -- read bytes to structure
 
     @Benchmark
     public void read1kBytes(final Blackhole bh) throws Exception {
         bh.consume(read(new ByteArrayInputStream(Buffers.B_1K), bh));
     }
-
 
     @Benchmark
     public void read10kBytes(final Blackhole bh) throws Exception {
@@ -94,23 +92,23 @@ public class BenchmarkJsonReader {
     public void read1000kBytesUTF16(final Blackhole bh) throws Exception {
         bh.consume(read(new ByteArrayInputStream(Buffers.B_UTF16_1000K), bh));
     }
-    
+
     @Benchmark
     public void read1000kBytes(final Blackhole bh) throws Exception {
         bh.consume(read(new ByteArrayInputStream(Buffers.B_1000K), bh));
     }
 
-   @Benchmark
+    @Benchmark
     public void read10000kBytesUTF16(final Blackhole bh) throws Exception {
         bh.consume(read(new ByteArrayInputStream(Buffers.B_UTF16_10000K), bh));
     }
-    
+
     @Benchmark
     public void read10000kBytes(final Blackhole bh) throws Exception {
         bh.consume(read(new ByteArrayInputStream(Buffers.B_10000K), bh));
     }
 
-    //-- read chars to structure
+    // -- read chars to structure
 
     @Benchmark
     public void read1kChars(final Blackhole bh) throws Exception {
@@ -131,18 +129,17 @@ public class BenchmarkJsonReader {
     public void read1000kChars(final Blackhole bh) throws Exception {
         bh.consume(read(new CharArrayReader(Buffers.C_1000K), bh));
     }
-    
+
     @Benchmark
     public void read1000kCharsUTF16(final Blackhole bh) throws Exception {
         bh.consume(read(new CharArrayReader(Buffers.C_UTF16_1000K), bh));
     }
 
-    
     @Benchmark
     public void read10000kChars(final Blackhole bh) throws Exception {
         bh.consume(read(new CharArrayReader(Buffers.C_10000K), bh));
     }
-    
+
     @Benchmark
     public void read10000kCharsUTF16(final Blackhole bh) throws Exception {
         bh.consume(read(new CharArrayReader(Buffers.C_UTF16_10000K), bh));

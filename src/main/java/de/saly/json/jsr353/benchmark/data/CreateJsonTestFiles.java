@@ -25,69 +25,64 @@ import org.apache.commons.io.output.FileWriterWithEncoding;
 
 public class CreateJsonTestFiles {
 
-    
     private CreateJsonTestFiles() {
-        
+
     }
 
     public static void main(final String[] args) throws Exception {
-        
+
         create("./generated/");
     }
 
     public static void create(String path) throws Exception {
 
-        
-        
-        
-        if(path == null || path.length()==0) {
+        if (path == null || path.length() == 0) {
             path = "./generated/";
         }
-        
+
         final File dir = new File(path).getAbsoluteFile();
         dir.mkdirs();
-        
-        System.out.println("Generating benchmark data "+dir.getAbsolutePath());
 
-        
+        System.out.println("Generating benchmark data " + dir.getAbsolutePath());
+
         create(path, 1, StandardCharsets.UTF_8);
         create(path, 1, StandardCharsets.UTF_16);
-        
+
         create(path, 10, StandardCharsets.UTF_8);
         create(path, 10, StandardCharsets.UTF_16);
-        
+
         create(path, 100, StandardCharsets.UTF_8);
         create(path, 100, StandardCharsets.UTF_16);
-        
+
         create(path, 1000, StandardCharsets.UTF_8);
         create(path, 1000, StandardCharsets.UTF_16);
-        
+
         create(path, 10000, StandardCharsets.UTF_8);
         create(path, 10000, StandardCharsets.UTF_16);
-        
+
         create(path, 100000, StandardCharsets.UTF_8);
         create(path, 100000, StandardCharsets.UTF_16);
 
-        create(path, 10000000, StandardCharsets.UTF_8); //10gb
-        createBigStack(path, 10000000*10, StandardCharsets.UTF_8);
-        
+        create(path, 10000000, StandardCharsets.UTF_8); // 10gb
+        createBigStack(path, 10000000 * 10, StandardCharsets.UTF_8);
+
         System.out.println("Finished.");
         System.out.println();
     }
 
-    private static File create(final String path, final int count, Charset charset) throws Exception {
+    private static File create(final String path, final int count, final Charset charset) throws Exception {
 
         if (count < 0 || path == null || path.length() == 0) {
             throw new IllegalArgumentException();
         }
 
-        final File json = new File(path + "/" + "generated_benchmark_test_file_"+charset.name()+"_" + count + ".json");
-        
-        if(json.exists()) {
+        final File json = new File(path + "/" + "generated_benchmark_test_file_" + charset.name() + "_" + count + ".json");
+
+        if (json.exists()) {
             System.out.println("File already exists: " + json.getAbsolutePath());
             return json;
         }
-        
+
         final FileWriterWithEncoding sb = new FileWriterWithEncoding(json, charset);
 
         sb.append("{\n");
@@ -154,19 +149,19 @@ public class CreateJsonTestFiles {
 
     }
 
-    private static File createBigStack(final String path, final int count, Charset charset) throws Exception {
+    private static File createBigStack(final String path, final int count, final Charset charset) throws Exception {
 
         if (count < 0 || path == null || path.length() == 0) {
             throw new IllegalArgumentException();
         }
 
-        final File json = new File(path + "/" + "generated_benchmark_test_file_bigstack_"+charset.name()+"_" + count + ".json");
-        
-        if(json.exists()) {
+        final File json = new File(path + "/" + "generated_benchmark_test_file_bigstack_" + charset.name() + "_" + count + ".json");
+
+        if (json.exists()) {
             System.out.println("File already exists: " + json.getAbsolutePath());
             return json;
         }
-        
+
         final FileWriterWithEncoding sb = new FileWriterWithEncoding(json, charset);
 
         for (int i = 0; i < count; i++) {

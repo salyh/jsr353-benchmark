@@ -1,0 +1,1353 @@
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64258]
+# Run progress: 0,00% complete, ETA 00:05:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,626 ops/s
+# Warmup Iteration   2: 3,806 ops/s
+# Warmup Iteration   3: 2,164 ops/s
+Iteration   1: 4,708 ops/s
+Iteration   2: 4,956 ops/s
+Iteration   3: 5,159 ops/s
+
+
+Result: 4,941 ±(99.9%) 4,117 ops/s [Average]
+  Statistics: (min, avg, max) = (4,708, 4,941, 5,159), stdev = 0,226
+  Confidence interval (99.9%): [0,824, 9,058]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kBytesUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64261]
+# Run progress: 1,85% complete, ETA 00:07:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,573 ops/s
+# Warmup Iteration   2: 2,625 ops/s
+# Warmup Iteration   3: 1,328 ops/s
+Iteration   1: 3,131 ops/s
+Iteration   2: 2,993 ops/s
+Iteration   3: 3,171 ops/s
+
+
+Result: 3,098 ±(99.9%) 1,705 ops/s [Average]
+  Statistics: (min, avg, max) = (2,993, 3,098, 3,171), stdev = 0,093
+  Confidence interval (99.9%): [1,394, 4,803]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64264]
+# Run progress: 3,70% complete, ETA 00:07:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,662 ops/s
+# Warmup Iteration   2: 5,224 ops/s
+# Warmup Iteration   3: 5,719 ops/s
+Iteration   1: 5,904 ops/s
+Iteration   2: 6,267 ops/s
+Iteration   3: 5,872 ops/s
+
+
+Result: 6,015 ±(99.9%) 4,002 ops/s [Average]
+  Statistics: (min, avg, max) = (5,872, 6,015, 6,267), stdev = 0,219
+  Confidence interval (99.9%): [2,013, 10,016]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kCharsUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64269]
+# Run progress: 5,56% complete, ETA 00:07:17
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,665 ops/s
+# Warmup Iteration   2: 4,236 ops/s
+# Warmup Iteration   3: 4,018 ops/s
+Iteration   1: 5,752 ops/s
+Iteration   2: 5,879 ops/s
+Iteration   3: 6,262 ops/s
+
+
+Result: 5,964 ±(99.9%) 4,845 ops/s [Average]
+  Statistics: (min, avg, max) = (5,752, 5,964, 6,262), stdev = 0,266
+  Confidence interval (99.9%): [1,120, 10,809]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64272]
+# Run progress: 7,41% complete, ETA 00:07:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,731 ops/s
+# Warmup Iteration   2: 51,511 ops/s
+# Warmup Iteration   3: 53,917 ops/s
+Iteration   1: 55,343 ops/s
+Iteration   2: 56,887 ops/s
+Iteration   3: 55,744 ops/s
+
+
+Result: 55,992 ±(99.9%) 14,611 ops/s [Average]
+  Statistics: (min, avg, max) = (55,343, 55,992, 56,887), stdev = 0,801
+  Confidence interval (99.9%): [41,381, 70,603]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kBytesUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64275]
+# Run progress: 9,26% complete, ETA 00:06:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,728 ops/s
+# Warmup Iteration   2: 31,065 ops/s
+# Warmup Iteration   3: 28,066 ops/s
+Iteration   1: 32,955 ops/s
+Iteration   2: 33,696 ops/s
+Iteration   3: 34,085 ops/s
+
+
+Result: 33,579 ±(99.9%) 10,480 ops/s [Average]
+  Statistics: (min, avg, max) = (32,955, 33,579, 34,085), stdev = 0,574
+  Confidence interval (99.9%): [23,099, 44,059]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64277]
+# Run progress: 11,11% complete, ETA 00:06:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,743 ops/s
+# Warmup Iteration   2: 61,478 ops/s
+# Warmup Iteration   3: 65,618 ops/s
+Iteration   1: 66,855 ops/s
+Iteration   2: 69,533 ops/s
+Iteration   3: 67,274 ops/s
+
+
+Result: 67,887 ±(99.9%) 26,278 ops/s [Average]
+  Statistics: (min, avg, max) = (66,855, 67,887, 69,533), stdev = 1,440
+  Confidence interval (99.9%): [41,609, 94,165]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kCharsUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64280]
+# Run progress: 12,96% complete, ETA 00:06:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,742 ops/s
+# Warmup Iteration   2: 60,300 ops/s
+# Warmup Iteration   3: 65,969 ops/s
+Iteration   1: 68,329 ops/s
+Iteration   2: 70,072 ops/s
+Iteration   3: 68,576 ops/s
+
+
+Result: 68,992 ±(99.9%) 17,202 ops/s [Average]
+  Statistics: (min, avg, max) = (68,329, 68,992, 70,072), stdev = 0,943
+  Confidence interval (99.9%): [51,790, 86,195]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read100kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64283]
+# Run progress: 14,81% complete, ETA 00:06:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,748 ops/s
+# Warmup Iteration   2: 525,194 ops/s
+# Warmup Iteration   3: 550,802 ops/s
+Iteration   1: 565,802 ops/s
+Iteration   2: 567,580 ops/s
+Iteration   3: 580,715 ops/s
+
+
+Result: 571,366 ±(99.9%) 148,598 ops/s [Average]
+  Statistics: (min, avg, max) = (565,802, 571,366, 580,715), stdev = 8,145
+  Confidence interval (99.9%): [422,768, 719,963]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read100kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64286]
+# Run progress: 16,67% complete, ETA 00:06:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,752 ops/s
+# Warmup Iteration   2: 631,037 ops/s
+# Warmup Iteration   3: 670,081 ops/s
+Iteration   1: 690,783 ops/s
+Iteration   2: 711,431 ops/s
+Iteration   3: 688,791 ops/s
+
+
+Result: 697,002 ±(99.9%) 228,694 ops/s [Average]
+  Statistics: (min, avg, max) = (688,791, 697,002, 711,431), stdev = 12,536
+  Confidence interval (99.9%): [468,307, 925,696]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64288]
+# Run progress: 18,52% complete, ETA 00:05:54
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,753 ops/s
+# Warmup Iteration   2: 4726,697 ops/s
+# Warmup Iteration   3: 5272,127 ops/s
+Iteration   1: 5711,381 ops/s
+Iteration   2: 5756,365 ops/s
+Iteration   3: 5885,967 ops/s
+
+
+Result: 5784,571 ±(99.9%) 1653,719 ops/s [Average]
+  Statistics: (min, avg, max) = (5711,381, 5784,571, 5885,967), stdev = 90,646
+  Confidence interval (99.9%): [4130,852, 7438,290]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64291]
+# Run progress: 20,37% complete, ETA 00:05:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,746 ops/s
+# Warmup Iteration   2: 6177,776 ops/s
+# Warmup Iteration   3: 6886,020 ops/s
+Iteration   1: 7223,414 ops/s
+Iteration   2: 7189,541 ops/s
+Iteration   3: 7405,934 ops/s
+
+
+Result: 7272,963 ±(99.9%) 2123,485 ops/s [Average]
+  Statistics: (min, avg, max) = (7189,541, 7272,963, 7405,934), stdev = 116,395
+  Confidence interval (99.9%): [5149,478, 9396,448]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64294]
+# Run progress: 22,22% complete, ETA 00:05:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,749 ops/s
+# Warmup Iteration   2: 39848,585 ops/s
+# Warmup Iteration   3: 50043,707 ops/s
+Iteration   1: 52481,748 ops/s
+Iteration   2: 52183,571 ops/s
+Iteration   3: 52563,088 ops/s
+
+
+Result: 52409,469 ±(99.9%) 3645,382 ops/s [Average]
+  Statistics: (min, avg, max) = (52183,571, 52409,469, 52563,088), stdev = 199,816
+  Confidence interval (99.9%): [48764,087, 56054,851]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64298]
+# Run progress: 24,07% complete, ETA 00:05:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,740 ops/s
+# Warmup Iteration   2: 52695,877 ops/s
+# Warmup Iteration   3: 71955,654 ops/s
+Iteration   1: 73974,887 ops/s
+Iteration   2: 73907,508 ops/s
+Iteration   3: 75700,094 ops/s
+
+
+Result: 74527,496 ±(99.9%) 18536,677 ops/s [Average]
+  Statistics: (min, avg, max) = (73907,508, 74527,496, 75700,094), stdev = 1016,058
+  Confidence interval (99.9%): [55990,819, 93064,173]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedBytes500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64301]
+# Run progress: 25,93% complete, ETA 00:05:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,743 ops/s
+# Warmup Iteration   2: 102,039 ops/s
+# Warmup Iteration   3: 107,513 ops/s
+Iteration   1: 111,219 ops/s
+Iteration   2: 114,321 ops/s
+Iteration   3: 111,891 ops/s
+
+
+Result: 112,477 ±(99.9%) 29,771 ops/s [Average]
+  Statistics: (min, avg, max) = (111,219, 112,477, 114,321), stdev = 1,632
+  Confidence interval (99.9%): [82,706, 142,248]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedChars500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64303]
+# Run progress: 27,78% complete, ETA 00:05:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,744 ops/s
+# Warmup Iteration   2: 127,304 ops/s
+# Warmup Iteration   3: 136,606 ops/s
+Iteration   1: 140,187 ops/s
+Iteration   2: 141,116 ops/s
+Iteration   3: 144,442 ops/s
+
+
+Result: 141,915 ±(99.9%) 40,816 ops/s [Average]
+  Statistics: (min, avg, max) = (140,187, 141,915, 144,442), stdev = 2,237
+  Confidence interval (99.9%): [101,099, 182,731]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedChars5000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64306]
+# Run progress: 29,63% complete, ETA 00:05:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,713 ops/s
+# Warmup Iteration   2: 12,355 ops/s
+# Warmup Iteration   3: 13,216 ops/s
+Iteration   1: 13,539 ops/s
+Iteration   2: 13,649 ops/s
+Iteration   3: 13,766 ops/s
+
+
+Result: 13,651 ±(99.9%) 2,064 ops/s [Average]
+  Statistics: (min, avg, max) = (13,539, 13,651, 13,766), stdev = 0,113
+  Confidence interval (99.9%): [11,588, 15,715]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100000InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64309]
+# Run progress: 31,48% complete, ETA 00:04:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,464 ops/s
+# Warmup Iteration   2: 0,583 ops/s
+# Warmup Iteration   3: 0,639 ops/s
+Iteration   1: 0,590 ops/s
+Iteration   2: 0,574 ops/s
+Iteration   3: 0,584 ops/s
+
+
+Result: 0,583 ±(99.9%) 0,147 ops/s [Average]
+  Statistics: (min, avg, max) = (0,574, 0,583, 0,590), stdev = 0,008
+  Confidence interval (99.9%): [0,435, 0,730]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10000InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64313]
+# Run progress: 33,33% complete, ETA 00:04:52
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,362 ops/s
+# Warmup Iteration   2: 6,907 ops/s
+# Warmup Iteration   3: 5,427 ops/s
+Iteration   1: 3,966 ops/s
+Iteration   2: 5,969 ops/s
+Iteration   3: 6,292 ops/s
+
+
+Result: 5,409 ±(99.9%) 22,994 ops/s [Average]
+  Statistics: (min, avg, max) = (3,966, 5,409, 6,292), stdev = 1,260
+  Confidence interval (99.9%): [-17,585, 28,403]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10000InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64316]
+# Run progress: 35,19% complete, ETA 00:04:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 3,659 ops/s
+# Warmup Iteration   2: 8,476 ops/s
+# Warmup Iteration   3: 9,371 ops/s
+Iteration   1: 9,399 ops/s
+Iteration   2: 10,248 ops/s
+Iteration   3: 9,970 ops/s
+
+
+Result: 9,872 ±(99.9%) 7,898 ops/s [Average]
+  Statistics: (min, avg, max) = (9,399, 9,872, 10,248), stdev = 0,433
+  Confidence interval (99.9%): [1,975, 17,770]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1000InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64319]
+# Run progress: 37,04% complete, ETA 00:04:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 31,333 ops/s
+# Warmup Iteration   2: 66,605 ops/s
+# Warmup Iteration   3: 61,520 ops/s
+Iteration   1: 49,012 ops/s
+Iteration   2: 56,549 ops/s
+Iteration   3: 56,300 ops/s
+
+
+Result: 53,953 ±(99.9%) 78,108 ops/s [Average]
+  Statistics: (min, avg, max) = (49,012, 53,953, 56,549), stdev = 4,281
+  Confidence interval (99.9%): [-24,155, 132,061]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1000InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64321]
+# Run progress: 38,89% complete, ETA 00:04:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 50,329 ops/s
+# Warmup Iteration   2: 97,619 ops/s
+# Warmup Iteration   3: 100,049 ops/s
+Iteration   1: 114,181 ops/s
+Iteration   2: 114,956 ops/s
+Iteration   3: 111,996 ops/s
+
+
+Result: 113,711 ±(99.9%) 28,001 ops/s [Average]
+  Statistics: (min, avg, max) = (111,996, 113,711, 114,956), stdev = 1,535
+  Confidence interval (99.9%): [85,710, 141,712]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64324]
+# Run progress: 40,74% complete, ETA 00:04:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 296,441 ops/s
+# Warmup Iteration   2: 570,021 ops/s
+# Warmup Iteration   3: 509,944 ops/s
+Iteration   1: 405,557 ops/s
+Iteration   2: 314,365 ops/s
+Iteration   3: 196,086 ops/s
+
+
+Result: 305,336 ±(99.9%) 1916,081 ops/s [Average]
+  Statistics: (min, avg, max) = (196,086, 305,336, 405,557), stdev = 105,027
+  Confidence interval (99.9%): [-1610,745, 2221,416]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64327]
+# Run progress: 42,59% complete, ETA 00:04:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 504,447 ops/s
+# Warmup Iteration   2: 981,471 ops/s
+# Warmup Iteration   3: 1130,559 ops/s
+Iteration   1: 1127,552 ops/s
+Iteration   2: 1131,909 ops/s
+Iteration   3: 1131,313 ops/s
+
+
+Result: 1130,258 ±(99.9%) 43,094 ops/s [Average]
+  Statistics: (min, avg, max) = (1127,552, 1130,258, 1131,909), stdev = 2,362
+  Confidence interval (99.9%): [1087,164, 1173,352]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64330]
+# Run progress: 44,44% complete, ETA 00:04:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 1369,573 ops/s
+# Warmup Iteration   2: 941,688 ops/s
+# Warmup Iteration   3: 583,846 ops/s
+Iteration   1: 501,035 ops/s
+Iteration   2: 485,163 ops/s
+Iteration   3: 407,932 ops/s
+
+
+Result: 464,710 ±(99.9%) 908,669 ops/s [Average]
+  Statistics: (min, avg, max) = (407,932, 464,710, 501,035), stdev = 49,807
+  Confidence interval (99.9%): [-443,959, 1373,379]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64333]
+# Run progress: 46,30% complete, ETA 00:04:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 4352,410 ops/s
+# Warmup Iteration   2: 9227,446 ops/s
+# Warmup Iteration   3: 11028,664 ops/s
+Iteration   1: 11144,141 ops/s
+Iteration   2: 11146,478 ops/s
+Iteration   3: 11021,132 ops/s
+
+
+Result: 11103,917 ±(99.9%) 1308,133 ops/s [Average]
+  Statistics: (min, avg, max) = (11021,132, 11103,917, 11146,478), stdev = 71,703
+  Confidence interval (99.9%): [9795,784, 12412,050]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64336]
+# Run progress: 48,15% complete, ETA 00:03:52
+# Fork: 1 of 1
+# Warmup Iteration   1: 1740,950 ops/s
+# Warmup Iteration   2: 721,301 ops/s
+# Warmup Iteration   3: 574,752 ops/s
+Iteration   1: 509,468 ops/s
+Iteration   2: 517,481 ops/s
+Iteration   3: 420,302 ops/s
+
+
+Result: 482,417 ±(99.9%) 984,109 ops/s [Average]
+  Statistics: (min, avg, max) = (420,302, 482,417, 517,481), stdev = 53,942
+  Confidence interval (99.9%): [-501,693, 1466,526]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64339]
+# Run progress: 50,00% complete, ETA 00:03:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 39808,913 ops/s
+# Warmup Iteration   2: 122702,822 ops/s
+# Warmup Iteration   3: 132827,824 ops/s
+Iteration   1: 132338,871 ops/s
+Iteration   2: 131481,594 ops/s
+Iteration   3: 130886,676 ops/s
+
+
+Result: 131569,047 ±(99.9%) 13318,586 ops/s [Average]
+  Statistics: (min, avg, max) = (130886,676, 131569,047, 132338,871), stdev = 730,037
+  Confidence interval (99.9%): [118250,461, 144887,634]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64342]
+# Run progress: 51,85% complete, ETA 00:03:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,682 ops/s
+# Warmup Iteration   2: 8,504 ops/s
+# Warmup Iteration   3: 8,483 ops/s
+Iteration   1: 8,676 ops/s
+Iteration   2: 8,713 ops/s
+Iteration   3: 8,648 ops/s
+
+
+Result: 8,679 ±(99.9%) 0,597 ops/s [Average]
+  Statistics: (min, avg, max) = (8,648, 8,679, 8,713), stdev = 0,033
+  Confidence interval (99.9%): [8,082, 9,276]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kBytesUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64345]
+# Run progress: 53,70% complete, ETA 00:03:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,606 ops/s
+# Warmup Iteration   2: 4,061 ops/s
+# Warmup Iteration   3: 4,252 ops/s
+Iteration   1: 4,232 ops/s
+Iteration   2: 4,234 ops/s
+Iteration   3: 4,189 ops/s
+
+
+Result: 4,218 ±(99.9%) 0,470 ops/s [Average]
+  Statistics: (min, avg, max) = (4,189, 4,218, 4,234), stdev = 0,026
+  Confidence interval (99.9%): [3,748, 4,688]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64348]
+# Run progress: 55,56% complete, ETA 00:03:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,691 ops/s
+# Warmup Iteration   2: 11,687 ops/s
+# Warmup Iteration   3: 11,754 ops/s
+Iteration   1: 11,778 ops/s
+Iteration   2: 11,735 ops/s
+Iteration   3: 11,353 ops/s
+
+
+Result: 11,622 ±(99.9%) 4,264 ops/s [Average]
+  Statistics: (min, avg, max) = (11,353, 11,622, 11,778), stdev = 0,234
+  Confidence interval (99.9%): [7,358, 15,886]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kCharsUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64352]
+# Run progress: 57,41% complete, ETA 00:03:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,703 ops/s
+# Warmup Iteration   2: 11,805 ops/s
+# Warmup Iteration   3: 11,788 ops/s
+Iteration   1: 11,806 ops/s
+Iteration   2: 11,647 ops/s
+Iteration   3: 11,194 ops/s
+
+
+Result: 11,549 ±(99.9%) 5,792 ops/s [Average]
+  Statistics: (min, avg, max) = (11,194, 11,549, 11,806), stdev = 0,318
+  Confidence interval (99.9%): [5,757, 17,342]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64354]
+# Run progress: 59,26% complete, ETA 00:03:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,740 ops/s
+# Warmup Iteration   2: 83,848 ops/s
+# Warmup Iteration   3: 87,182 ops/s
+Iteration   1: 86,851 ops/s
+Iteration   2: 87,191 ops/s
+Iteration   3: 87,896 ops/s
+
+
+Result: 87,313 ±(99.9%) 9,721 ops/s [Average]
+  Statistics: (min, avg, max) = (86,851, 87,313, 87,896), stdev = 0,533
+  Confidence interval (99.9%): [77,592, 97,034]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kBytesUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64357]
+# Run progress: 61,11% complete, ETA 00:02:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,732 ops/s
+# Warmup Iteration   2: 42,349 ops/s
+# Warmup Iteration   3: 42,859 ops/s
+Iteration   1: 42,774 ops/s
+Iteration   2: 42,867 ops/s
+Iteration   3: 39,336 ops/s
+
+
+Result: 41,659 ±(99.9%) 36,711 ops/s [Average]
+  Statistics: (min, avg, max) = (39,336, 41,659, 42,867), stdev = 2,012
+  Confidence interval (99.9%): [4,948, 78,370]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64360]
+# Run progress: 62,96% complete, ETA 00:02:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,746 ops/s
+# Warmup Iteration   2: 122,378 ops/s
+# Warmup Iteration   3: 122,783 ops/s
+Iteration   1: 122,693 ops/s
+Iteration   2: 122,197 ops/s
+Iteration   3: 118,080 ops/s
+
+
+Result: 120,990 ±(99.9%) 46,193 ops/s [Average]
+  Statistics: (min, avg, max) = (118,080, 120,990, 122,693), stdev = 2,532
+  Confidence interval (99.9%): [74,798, 167,183]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kCharsUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64363]
+# Run progress: 64,81% complete, ETA 00:02:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,747 ops/s
+# Warmup Iteration   2: 119,801 ops/s
+# Warmup Iteration   3: 118,015 ops/s
+Iteration   1: 118,414 ops/s
+Iteration   2: 103,132 ops/s
+Iteration   3: 106,647 ops/s
+
+
+Result: 109,398 ±(99.9%) 146,019 ops/s [Average]
+  Statistics: (min, avg, max) = (103,132, 109,398, 118,414), stdev = 8,004
+  Confidence interval (99.9%): [-36,621, 255,416]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly100kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64365]
+# Run progress: 66,67% complete, ETA 00:02:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,681 ops/s
+# Warmup Iteration   2: 847,572 ops/s
+# Warmup Iteration   3: 858,591 ops/s
+Iteration   1: 864,287 ops/s
+Iteration   2: 873,931 ops/s
+Iteration   3: 854,900 ops/s
+
+
+Result: 864,373 ±(99.9%) 173,599 ops/s [Average]
+  Statistics: (min, avg, max) = (854,900, 864,373, 873,931), stdev = 9,516
+  Confidence interval (99.9%): [690,774, 1037,972]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly100kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64368]
+# Run progress: 68,52% complete, ETA 00:02:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,760 ops/s
+# Warmup Iteration   2: 1201,575 ops/s
+# Warmup Iteration   3: 1210,770 ops/s
+Iteration   1: 1214,640 ops/s
+Iteration   2: 1215,490 ops/s
+Iteration   3: 1163,140 ops/s
+
+
+Result: 1197,757 ±(99.9%) 546,983 ops/s [Average]
+  Statistics: (min, avg, max) = (1163,140, 1197,757, 1215,490), stdev = 29,982
+  Confidence interval (99.9%): [650,774, 1744,740]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64371]
+# Run progress: 70,37% complete, ETA 00:02:13
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,747 ops/s
+# Warmup Iteration   2: 7761,597 ops/s
+# Warmup Iteration   3: 8369,380 ops/s
+Iteration   1: 8398,462 ops/s
+Iteration   2: 8848,361 ops/s
+Iteration   3: 8619,687 ops/s
+
+
+Result: 8622,170 ±(99.9%) 4104,103 ops/s [Average]
+  Statistics: (min, avg, max) = (8398,462, 8622,170, 8848,361), stdev = 224,960
+  Confidence interval (99.9%): [4518,067, 12726,273]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64374]
+# Run progress: 72,22% complete, ETA 00:02:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,742 ops/s
+# Warmup Iteration   2: 11527,179 ops/s
+# Warmup Iteration   3: 12293,232 ops/s
+Iteration   1: 12251,751 ops/s
+Iteration   2: 12247,400 ops/s
+Iteration   3: 11782,970 ops/s
+
+
+Result: 12094,040 ±(99.9%) 4914,924 ops/s [Average]
+  Statistics: (min, avg, max) = (11782,970, 12094,040, 12251,751), stdev = 269,404
+  Confidence interval (99.9%): [7179,116, 17008,964]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64377]
+# Run progress: 74,07% complete, ETA 00:01:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,756 ops/s
+# Warmup Iteration   2: 59707,100 ops/s
+# Warmup Iteration   3: 72254,233 ops/s
+Iteration   1: 74678,112 ops/s
+Iteration   2: 77030,919 ops/s
+Iteration   3: 74937,917 ops/s
+
+
+Result: 75548,983 ±(99.9%) 23533,527 ops/s [Average]
+  Statistics: (min, avg, max) = (74678,112, 75548,983, 77030,919), stdev = 1289,952
+  Confidence interval (99.9%): [52015,456, 99082,509]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64380]
+# Run progress: 75,93% complete, ETA 00:01:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,750 ops/s
+# Warmup Iteration   2: 118327,880 ops/s
+# Warmup Iteration   3: 122314,453 ops/s
+Iteration   1: 121127,769 ops/s
+Iteration   2: 102421,260 ops/s
+Iteration   3: 125070,822 ops/s
+
+
+Result: 116206,617 ±(99.9%) 220752,025 ops/s [Average]
+  Statistics: (min, avg, max) = (102421,260, 116206,617, 125070,822), stdev = 12100,163
+  Confidence interval (99.9%): [-104545,408, 336958,642]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedBytes500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64383]
+# Run progress: 77,78% complete, ETA 00:01:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,753 ops/s
+# Warmup Iteration   2: 173,103 ops/s
+# Warmup Iteration   3: 175,356 ops/s
+Iteration   1: 175,979 ops/s
+Iteration   2: 175,307 ops/s
+Iteration   3: 171,347 ops/s
+
+
+Result: 174,211 ±(99.9%) 45,658 ops/s [Average]
+  Statistics: (min, avg, max) = (171,347, 174,211, 175,979), stdev = 2,503
+  Confidence interval (99.9%): [128,553, 219,869]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars200
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64386]
+# Run progress: 79,63% complete, ETA 00:01:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,755 ops/s
+# Warmup Iteration   2: 601,768 ops/s
+# Warmup Iteration   3: 618,510 ops/s
+Iteration   1: 618,033 ops/s
+Iteration   2: 619,896 ops/s
+Iteration   3: 599,445 ops/s
+
+
+Result: 612,458 ±(99.9%) 206,301 ops/s [Average]
+  Statistics: (min, avg, max) = (599,445, 612,458, 619,896), stdev = 11,308
+  Confidence interval (99.9%): [406,157, 818,759]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64389]
+# Run progress: 81,48% complete, ETA 00:01:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,745 ops/s
+# Warmup Iteration   2: 242,252 ops/s
+# Warmup Iteration   3: 242,781 ops/s
+Iteration   1: 242,842 ops/s
+Iteration   2: 243,539 ops/s
+Iteration   3: 234,655 ops/s
+
+
+Result: 240,345 ±(99.9%) 90,131 ops/s [Average]
+  Statistics: (min, avg, max) = (234,655, 240,345, 243,539), stdev = 4,940
+  Confidence interval (99.9%): [150,214, 330,476]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars5000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64391]
+# Run progress: 83,33% complete, ETA 00:01:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,724 ops/s
+# Warmup Iteration   2: 23,966 ops/s
+# Warmup Iteration   3: 23,908 ops/s
+Iteration   1: 23,998 ops/s
+Iteration   2: 24,040 ops/s
+Iteration   3: 23,155 ops/s
+
+
+Result: 23,731 ±(99.9%) 9,113 ops/s [Average]
+  Statistics: (min, avg, max) = (23,155, 23,731, 24,040), stdev = 0,499
+  Confidence interval (99.9%): [14,618, 32,844]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly10000kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64394]
+# Run progress: 85,19% complete, ETA 00:01:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,616 ops/s
+# Warmup Iteration   2: 7,940 ops/s
+# Warmup Iteration   3: 7,561 ops/s
+Iteration   1: 8,051 ops/s
+Iteration   2: 6,181 ops/s
+Iteration   3: 8,574 ops/s
+
+
+Result: 7,602 ±(99.9%) 22,953 ops/s [Average]
+  Statistics: (min, avg, max) = (6,181, 7,602, 8,574), stdev = 1,258
+  Confidence interval (99.9%): [-15,351, 30,555]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly1000kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64398]
+# Run progress: 87,04% complete, ETA 00:00:57
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,667 ops/s
+# Warmup Iteration   2: 78,608 ops/s
+# Warmup Iteration   3: 89,642 ops/s
+Iteration   1: 90,740 ops/s
+Iteration   2: 91,576 ops/s
+Iteration   3: 93,899 ops/s
+
+
+Result: 92,072 ±(99.9%) 29,867 ops/s [Average]
+  Statistics: (min, avg, max) = (90,740, 92,072, 93,899), stdev = 1,637
+  Confidence interval (99.9%): [62,205, 121,939]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly100kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64401]
+# Run progress: 88,89% complete, ETA 00:00:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,733 ops/s
+# Warmup Iteration   2: 794,884 ops/s
+# Warmup Iteration   3: 1022,032 ops/s
+Iteration   1: 1031,808 ops/s
+Iteration   2: 1064,918 ops/s
+Iteration   3: 1035,800 ops/s
+
+
+Result: 1044,175 ±(99.9%) 329,743 ops/s [Average]
+  Statistics: (min, avg, max) = (1031,808, 1044,175, 1064,918), stdev = 18,074
+  Confidence interval (99.9%): [714,433, 1373,918]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly10kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64404]
+# Run progress: 90,74% complete, ETA 00:00:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,751 ops/s
+# Warmup Iteration   2: 6740,307 ops/s
+# Warmup Iteration   3: 10122,402 ops/s
+Iteration   1: 10383,001 ops/s
+Iteration   2: 10439,043 ops/s
+Iteration   3: 10365,876 ops/s
+
+
+Result: 10395,973 ±(99.9%) 698,181 ops/s [Average]
+  Statistics: (min, avg, max) = (10365,876, 10395,973, 10439,043), stdev = 38,270
+  Confidence interval (99.9%): [9697,793, 11094,154]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly1kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64406]
+# Run progress: 92,59% complete, ETA 00:00:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,745 ops/s
+# Warmup Iteration   2: 66880,609 ops/s
+# Warmup Iteration   3: 105924,790 ops/s
+Iteration   1: 107847,073 ops/s
+Iteration   2: 108017,476 ops/s
+Iteration   3: 107212,337 ops/s
+
+
+Result: 107692,295 ±(99.9%) 7740,778 ops/s [Average]
+  Statistics: (min, avg, max) = (107212,337, 107692,295, 108017,476), stdev = 424,298
+  Confidence interval (99.9%): [99951,517, 115433,073]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM200
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64409]
+# Run progress: 94,44% complete, ETA 00:00:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,721 ops/s
+# Warmup Iteration   2: 472,147 ops/s
+# Warmup Iteration   3: 502,715 ops/s
+Iteration   1: 530,143 ops/s
+Iteration   2: 527,302 ops/s
+Iteration   3: 544,321 ops/s
+
+
+Result: 533,922 ±(99.9%) 166,327 ops/s [Average]
+  Statistics: (min, avg, max) = (527,302, 533,922, 544,321), stdev = 9,117
+  Confidence interval (99.9%): [367,595, 700,249]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64412]
+# Run progress: 96,30% complete, ETA 00:00:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,691 ops/s
+# Warmup Iteration   2: 181,293 ops/s
+# Warmup Iteration   3: 199,156 ops/s
+Iteration   1: 208,873 ops/s
+Iteration   2: 207,557 ops/s
+Iteration   3: 214,073 ops/s
+
+
+Result: 210,168 ±(99.9%) 62,867 ops/s [Average]
+  Statistics: (min, avg, max) = (207,557, 210,168, 214,073), stdev = 3,446
+  Confidence interval (99.9%): [147,301, 273,034]
+
+
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM5000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -XX:CompileCommandFile=/var/folders/qy/9xjdnp697cq0_c0dy6_x20hr0000gn/T/jmh2355893795968799959compilecommand, -cp, /Users/salyh/git/jsr353-benchmark/target/test-classes:/Users/salyh/git/jsr353-benchmark/target/classes:/Users/salyh/git/jsr353-benchmark/fleece-core-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/apache/geronimo/specs/geronimo-json_1.0_spec/1.0-SNAPSHOT/geronimo-json_1.0_spec-1.0-SNAPSHOT.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-core/0.9.5/jmh-core-0.9.5.jar:/Users/salyh/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/Users/salyh/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/salyh/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/0.9.5/jmh-generator-annprocess-0.9.5.jar:/Users/salyh/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 64415]
+# Run progress: 98,15% complete, ETA 00:00:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,641 ops/s
+# Warmup Iteration   2: 16,863 ops/s
+# Warmup Iteration   3: 18,149 ops/s
+Iteration   1: 18,491 ops/s
+Iteration   2: 18,568 ops/s
+Iteration   3: 18,414 ops/s
+
+
+Result: 18,491 ±(99.9%) 1,402 ops/s [Average]
+  Statistics: (min, avg, max) = (18,414, 18,491, 18,568), stdev = 0,077
+  Confidence interval (99.9%): [17,089, 19,892]
+
+
+# Run complete. Total time: 00:07:22
+
+Benchmark                                                                     Mode  Samples       Score  Score error  Units
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10000kBytes               thrpt        3       4,941        4,117  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10000kBytesUTF16          thrpt        3       3,098        1,705  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10000kChars               thrpt        3       6,015        4,002  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10000kCharsUTF16          thrpt        3       5,964        4,845  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1000kBytes                thrpt        3      55,992       14,611  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1000kBytesUTF16           thrpt        3      33,579       10,480  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1000kChars                thrpt        3      67,887       26,278  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1000kCharsUTF16           thrpt        3      68,992       17,202  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read100kBytes                 thrpt        3     571,366      148,598  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read100kChars                 thrpt        3     697,002      228,694  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10kBytes                  thrpt        3    5784,571     1653,719  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10kChars                  thrpt        3    7272,963     2123,485  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1kBytes                   thrpt        3   52409,469     3645,382  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1kChars                   thrpt        3   74527,496    18536,677  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.readCombinedBytes500          thrpt        3     112,477       29,771  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.readCombinedChars500          thrpt        3     141,915       40,816  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.readCombinedChars5000         thrpt        3      13,651        2,064  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen100000InFile                  thrpt        3       0,583        0,147  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen10000InFile                   thrpt        3       5,409       22,994  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen10000InMem                    thrpt        3       9,872        7,898  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen1000InFile                    thrpt        3      53,953       78,108  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen1000InMem                     thrpt        3     113,711       28,001  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen100InFile                     thrpt        3     305,336     1916,081  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen100InMem                      thrpt        3    1130,258       43,094  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen10InFile                      thrpt        3     464,710      908,669  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen10InMem                       thrpt        3   11103,917     1308,133  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen1InFile                       thrpt        3     482,417      984,109  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkGenerator.gen1InMem                        thrpt        3  131569,047    13318,586  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10000kBytes          thrpt        3       8,679        0,597  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10000kBytesUTF16     thrpt        3       4,218        0,470  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10000kChars          thrpt        3      11,622        4,264  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10000kCharsUTF16     thrpt        3      11,549        5,792  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1000kBytes           thrpt        3      87,313        9,721  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1000kBytesUTF16      thrpt        3      41,659       36,711  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1000kChars           thrpt        3     120,990       46,193  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1000kCharsUTF16      thrpt        3     109,398      146,019  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly100kBytes            thrpt        3     864,373      173,599  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly100kChars            thrpt        3    1197,757      546,983  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10kBytes             thrpt        3    8622,170     4104,103  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10kChars             thrpt        3   12094,040     4914,924  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1kBytes              thrpt        3   75548,983    23533,527  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1kChars              thrpt        3  116206,617   220752,025  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedBytes500     thrpt        3     174,211       45,658  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars200     thrpt        3     612,458      206,301  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars500     thrpt        3     240,345       90,131  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars5000    thrpt        3      23,731        9,113  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStructureParser.parseOnly10000kIM          thrpt        3       7,602       22,953  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStructureParser.parseOnly1000kIM           thrpt        3      92,072       29,867  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStructureParser.parseOnly100kIM            thrpt        3    1044,175      329,743  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStructureParser.parseOnly10kIM             thrpt        3   10395,973      698,181  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStructureParser.parseOnly1kIM              thrpt        3  107692,295     7740,778  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM200     thrpt        3     533,922      166,327  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM500     thrpt        3     210,168       62,867  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM5000    thrpt        3      18,491        1,402  ops/s

@@ -17,12 +17,17 @@ along with JSR 353 Benchmark Suite. If not, see <http://www.gnu.org/licenses/>.
 */
 package de.saly.json.jsr353.benchmark.data;
 
+import java.io.CharArrayReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
+
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonReaderFactory;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
@@ -32,6 +37,8 @@ public class Buffers {
     private Buffers() {
 
     }
+
+    public static JsonReaderFactory FACTORY = Json.createReaderFactory(null);
 
     public static final byte[] B_1K = readBytes(1, StandardCharsets.UTF_8);
     public static final byte[] B_10K = readBytes(10, StandardCharsets.UTF_8);
@@ -49,21 +56,28 @@ public class Buffers {
     public static final char[] C_10000K = readChars(10000, StandardCharsets.UTF_8);
     public static final char[] C_UTF16_10000K = readChars(10000, StandardCharsets.UTF_16);
 
-    private static byte[] readBytes(final int count, Charset charset) {
+    public static final JsonObject O_1K = FACTORY.createReader(new CharArrayReader(C_1K)).readObject();
+    public static final JsonObject O_10K = FACTORY.createReader(new CharArrayReader(C_10K)).readObject();
+    public static final JsonObject O_100K = FACTORY.createReader(new CharArrayReader(C_100K)).readObject();
+    public static final JsonObject O_1000K = FACTORY.createReader(new CharArrayReader(C_1000K)).readObject();
+    public static final JsonObject O_10000K = FACTORY.createReader(new CharArrayReader(C_10000K)).readObject();
+
+    private static byte[] readBytes(final int count, final Charset charset) {
 
         try {
-            return  FileUtils.readFileToByteArray(new File("./generated/generated_benchmark_test_file_"+charset.name()+"_" + count + ".json"));
+            return FileUtils.readFileToByteArray(new File("./generated/generated_benchmark_test_file_" + charset.name() + "_" + count
+                    + ".json"));
         } catch (final IOException e) {
             return null;
-        } 
+        }
 
     }
 
-    private static char[] readChars(final int count, Charset charset) {
+    private static char[] readChars(final int count, final Charset charset) {
 
         InputStream in = null;
         try {
-            in = new FileInputStream("./generated/generated_benchmark_test_file_"+charset.name()+"_" + count + ".json");
+            in = new FileInputStream("./generated/generated_benchmark_test_file_" + charset.name() + "_" + count + ".json");
             return IOUtils.toCharArray(in, charset);
         } catch (final IOException e) {
             return null;

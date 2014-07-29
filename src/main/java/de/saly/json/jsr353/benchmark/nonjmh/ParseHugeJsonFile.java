@@ -35,46 +35,28 @@ public class ParseHugeJsonFile {
 
     final static JsonParserFactory parserFactory = Json.createParserFactory(Collections.EMPTY_MAP);
 
-    public static void main(final String[] args) throws Exception {
-        try {
-            run();
-        } catch (Exception e) {
-            System.out.println(e);
-            e.printStackTrace();
-        }
-    }
-    
-    public static void run() throws Exception {
+    public static void run(final File file) throws Exception {
 
         if (!Charset.defaultCharset().equals(Charset.forName("UTF-8"))) {
             throw new RuntimeException("Default charset is " + Charset.defaultCharset() + ", must be UTF-8");
         }
-        
-        final File file = new File(
-                "./generated/generated_benchmark_test_file_UTF-8_10000000.json");
-        
-        if(!file.exists()) {
-            System.out.println("ERROR -  "+file.getAbsolutePath()+" does not exist.");
+
+        if (!file.exists()) {
+            System.out.println("ERROR -  " + file.getAbsolutePath() + " does not exist.");
             return;
         }
-       
-        
-   
+
         CreateJsonTestFiles.create(null);
-       
-        System.out.println("Start benchmarking of "+file.getAbsolutePath());
-        
-        
+
+        System.out.println("Start benchmarking of " + file.getAbsolutePath());
 
         long start = 0;
         long end = 0;
 
-        
-
         System.out.println("File created: " + new Date(file.lastModified()));
         System.out.println("Filesize: " + file.length() + " bytes");
-        System.out.println("Filesize: " + (file.length()/(1024*1024)) + " mb");
-        
+        System.out.println("Filesize: " + (file.length() / (1024 * 1024)) + " mb");
+
         start = System.currentTimeMillis();
         final JsonParser parser = parserFactory.createParser((new FileInputStream(file)));
         long sevents = 0;
@@ -119,7 +101,7 @@ public class ParseHugeJsonFile {
 
         parser.close();
         end = System.currentTimeMillis();
-        
+
         System.out.println("Duration: " + ((end - start)) + " ms");
         System.out.println("String Events: " + sevents);
         System.out.println("Integral Number Events: " + ievents);

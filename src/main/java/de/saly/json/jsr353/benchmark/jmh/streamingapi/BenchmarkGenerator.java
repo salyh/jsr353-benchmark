@@ -108,22 +108,61 @@ public class BenchmarkGenerator {
 
     @Benchmark
     public void gen1InMem(final Blackhole bh) throws Exception {
-        bh.consume(generate(new StringWriter(), 1, bh));
+        final StringWriter sw = new StringWriter();
+        bh.consume(generate(sw, 1, bh));
+        bh.consume(sw);
     }
 
     @Benchmark
     public void gen10InMem(final Blackhole bh) throws Exception {
-        bh.consume(generate(new StringWriter(), 10, bh));
+        final StringWriter sw = new StringWriter();
+        bh.consume(generate(sw, 10, bh));
+        bh.consume(sw);
     }
 
     @Benchmark
     public void gen100InMem(final Blackhole bh) throws Exception {
-        bh.consume(generate(new StringWriter(), 100, bh));
+        final StringWriter sw = new StringWriter();
+        bh.consume(generate(sw, 100, bh));
+        bh.consume(sw);
     }
 
     @Benchmark
     public void gen1000InMem(final Blackhole bh) throws Exception {
-        bh.consume(generate(new StringWriter(), 1000, bh));
+        final StringWriter sw = new StringWriter();
+        bh.consume(generate(sw, 1000, bh));
+        bh.consume(sw);
+    }
+
+    @Benchmark
+    public void gen10000InMem(final Blackhole bh) throws Exception {
+        final StringWriter sw = new StringWriter();
+        bh.consume(generate(sw, 10000, bh));
+        bh.consume(sw);
+    }
+
+    @Benchmark
+    public void gen1InFile(final Blackhole bh) throws Exception {
+        final File tmp = File.createTempFile("json", "bench");
+        tmp.deleteOnExit();
+        final FileWriter fw = new FileWriter(tmp);
+        bh.consume(generate(fw, 1, bh));
+    }
+
+    @Benchmark
+    public void gen10InFile(final Blackhole bh) throws Exception {
+        final File tmp = File.createTempFile("json", "bench");
+        tmp.deleteOnExit();
+        final FileWriter fw = new FileWriter(tmp);
+        bh.consume(generate(fw, 10, bh));
+    }
+
+    @Benchmark
+    public void gen100InFile(final Blackhole bh) throws Exception {
+        final File tmp = File.createTempFile("json", "bench");
+        tmp.deleteOnExit();
+        final FileWriter fw = new FileWriter(tmp);
+        bh.consume(generate(fw, 100, bh));
     }
 
     @Benchmark
@@ -132,7 +171,6 @@ public class BenchmarkGenerator {
         tmp.deleteOnExit();
         final FileWriter fw = new FileWriter(tmp);
         bh.consume(generate(fw, 1000, bh));
-        fw.close();
     }
 
     @Benchmark
@@ -141,7 +179,6 @@ public class BenchmarkGenerator {
         tmp.deleteOnExit();
         final FileWriter fw = new FileWriter(tmp);
         bh.consume(generate(fw, 10000, bh));
-        fw.close();
     }
 
     @Benchmark
@@ -150,6 +187,6 @@ public class BenchmarkGenerator {
         tmp.deleteOnExit();
         final FileWriter fw = new FileWriter(tmp);
         bh.consume(generate(fw, 100000, bh));
-        fw.close();
+
     }
 }
