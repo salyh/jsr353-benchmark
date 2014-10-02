@@ -1,0 +1,58 @@
+-----------------------------------------------------------------------------------
+Johnzon vs. Glassfish (JsonP RI)
+-----------------------------------------------------------------------------------
+Date: 02-OCT-2014
+Glassfish (JsonP RI) org.glassfish.json version 1.0.4
+Johnzon org.apache.johnzon.core version 0.1-incubating
+
+-----------------------------------------------------------------------------------
+JMH benchmarks
+-----------------------------------------------------------------------------------
+Parsing speed:
+    Johnzon is about 6% faster for parsing bytes and 10% faster for parsing chars.
+
+Parsing speed (in memory parser): 
+    Here is Johnzon clearly slower than Glassfish (JsonP RI), especially for large JSON text.
+
+JSON generation: 
+    Generated to a file Johnzon is clearly faster here, generated into memory for larger JSON text 
+    Johnzon is bit slower.
+
+Reading speed (into JsonStructure): 
+    If input is char or bytes encoded as UTF-8 then Johnzon is about 10-15% faster. 
+    If input are UTF-16 encoded bytes than speed is more or less the same.
+
+-----------------------------------------------------------------------------------
+Parse huge JSON file
+-----------------------------------------------------------------------------------
+Filesize: 15474444484 bytes
+Filesize: 14757 mb
+Duration: 244759 ms
+String Events: 420000000
+Integral Number Events: 300000000
+Big Decimal Events: 60000000
+
+Currently loaded implementation:  org.glassfish.json 1.0.4
+Parsing speed: 67996 bytes/ms
+Parsing speed: 68169358 bytes/sec
+Parsing speed: 66571 kbytes/sec
+Parsing speed: 65 mb/sec
+Parsing speed: 520 mbit/sec
+
+Currently loaded implementation:  org.apache.johnzon.core 0.1-incubating
+Parsing speed: 63223 bytes/ms
+Parsing speed: 63419854 bytes/sec
+Parsing speed: 61933 kbytes/sec
+Parsing speed: 60 mb/sec
+Parsing speed: 483 mbit/sec
+
+
+Conclusion: 
+    Johnzon is about 7% slower here but memory footprint was 12% smaller compared to Glassfish (JsonP RI)
+
+-----------------------------------------------------------------------------------
+Benchmark hard- and software
+-----------------------------------------------------------------------------------
+iMac 2,66 GH Core i5-750 (4 Cores)
+OS X 10.9
+Oracle Java 1.7.0_45

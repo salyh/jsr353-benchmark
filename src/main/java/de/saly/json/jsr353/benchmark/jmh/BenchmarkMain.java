@@ -83,7 +83,7 @@ public class BenchmarkMain {
             e.printStackTrace();
         }
 
-        if (Boolean.getBoolean("skipNonJmh")) {
+        //if (!Boolean.getBoolean("skipNonJmh")) {
 
             try {
                 final File file = new File("./generated/generated_benchmark_test_file_UTF-8_10000000.json");
@@ -93,15 +93,15 @@ public class BenchmarkMain {
                 e.printStackTrace();
             }
 
-            try {
+            /*try {
                 final File file = new File("./generated/generated_benchmark_test_file_bigstack_UTF-8_100000000.json");
                 ParseHugeJsonFile.run(file);
             } catch (final Exception e) {
                 System.out.println(e);
                 e.printStackTrace();
-            }
+            }*/
 
-        }
+        //}
 
         final long end = System.currentTimeMillis();
 

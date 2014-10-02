@@ -3,8 +3,8 @@ jsr353-benchmark
 
 JMH based benchmark suite for benchmarking JSR 353 (Java API for JSON Processing) implementations.
 
-<pre>Usage: mvn compile exec:exec -Dimpljar=fleece-core-1.0-SNAPSHOT</pre>
-<pre>Usage: mvn compile exec:exec -Dimpljar=javax.json-1.0.5-SNAPSHOT.jar</pre>
+<pre>Usage: mvn compile exec:exec -Dimpljar=johnzon-core-0.1-incubating.jar</pre>
+<pre>Usage: mvn compile exec:exec -Dimpljar=javax.json-1.0.4.jar</pre>
 <pre>Usage: mvn compile exec:exec -Dimpljar=another-impl-of-jsr353.jar</pre>
 
 The .jar file with the implementation must reside in the same directory as the pom.xml
