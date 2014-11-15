@@ -113,6 +113,24 @@ public class BenchmarkStreamParser {
     public void parseOnly10000kBytesUTF16(final Blackhole bh) throws Exception {
         bh.consume(parse(new ByteArrayInputStream(Buffers.B_UTF16_10000K), bh));
     }
+    
+    @Benchmark
+    public void parseOnly50000kBytes(final Blackhole bh) throws Exception {
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_10000K), bh));
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_10000K), bh));
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_10000K), bh));
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_10000K), bh));
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_10000K), bh));
+    }
+
+    @Benchmark
+    public void parseOnly50000kBytesUTF16(final Blackhole bh) throws Exception {
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_UTF16_10000K), bh));
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_UTF16_10000K), bh));
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_UTF16_10000K), bh));
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_UTF16_10000K), bh));
+        bh.consume(parse(new ByteArrayInputStream(Buffers.B_UTF16_10000K), bh));
+    }
 
     // -- parse chars
 
@@ -193,6 +211,16 @@ public class BenchmarkStreamParser {
         bh.consume(parse(new CharArrayReader(Buffers.C_1000K), bh));
         bh.consume(parse(new CharArrayReader(Buffers.C_1000K), bh));
         bh.consume(parse(new CharArrayReader(Buffers.C_1000K), bh));
+
+    }
+    
+    @Benchmark
+    public void parseOnlyCombinedChars50000(final Blackhole bh) throws Exception {
+        bh.consume(parse(new CharArrayReader(Buffers.C_10000K), bh));
+        bh.consume(parse(new CharArrayReader(Buffers.C_10000K), bh));
+        bh.consume(parse(new CharArrayReader(Buffers.C_10000K), bh));
+        bh.consume(parse(new CharArrayReader(Buffers.C_10000K), bh));
+        bh.consume(parse(new CharArrayReader(Buffers.C_10000K), bh));
 
     }
 

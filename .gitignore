@@ -17,3 +17,5 @@ generated/
 .settings/
 .classpath
 .project
+*benchmark*result*.txt
+*benchmark*thrpt*.txt

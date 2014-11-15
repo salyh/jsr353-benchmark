@@ -134,5 +134,16 @@ public class BenchmarkStructureParser {
         bh.consume(parse(Buffers.O_1000K, bh));
 
     }
+    
+    @Benchmark
+    public void parseOnlyCombinedIM50000(final Blackhole bh) throws Exception {
+        bh.consume(parse(Buffers.O_10000K, bh));
+        bh.consume(parse(Buffers.O_10000K, bh));
+        bh.consume(parse(Buffers.O_10000K, bh));
+        bh.consume(parse(Buffers.O_10000K, bh));
+        bh.consume(parse(Buffers.O_10000K, bh));
+        bh.consume(parse(Buffers.O_10000K, bh));
+
+    }
 
 }

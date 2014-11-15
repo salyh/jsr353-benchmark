@@ -164,6 +164,16 @@ public class BenchmarkJsonReader {
         bh.consume(read(new CharArrayReader(Buffers.C_1000K), bh));
 
     }
+    
+    @Benchmark
+    public void readCombinedChars50000(final Blackhole bh) throws Exception {
+        bh.consume(read(new CharArrayReader(Buffers.C_10000K), bh));
+        bh.consume(read(new CharArrayReader(Buffers.C_10000K), bh));
+        bh.consume(read(new CharArrayReader(Buffers.C_10000K), bh));
+        bh.consume(read(new CharArrayReader(Buffers.C_10000K), bh));
+        bh.consume(read(new CharArrayReader(Buffers.C_10000K), bh));
+
+    }
 
     @Benchmark
     public void readCombinedBytes500(final Blackhole bh) throws Exception {
@@ -172,6 +182,26 @@ public class BenchmarkJsonReader {
         bh.consume(read(new ByteArrayInputStream(Buffers.B_100K), bh));
         bh.consume(read(new ByteArrayInputStream(Buffers.B_100K), bh));
         bh.consume(read(new ByteArrayInputStream(Buffers.B_100K), bh));
+
+    }
+    
+    @Benchmark
+    public void readCombinedBytes5000(final Blackhole bh) throws Exception {
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_1000K), bh));
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_1000K), bh));
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_1000K), bh));
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_1000K), bh));
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_1000K), bh));
+
+    }
+    
+    @Benchmark
+    public void readCombinedBytes50000(final Blackhole bh) throws Exception {
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_10000K), bh));
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_10000K), bh));
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_10000K), bh));
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_10000K), bh));
+        bh.consume(read(new ByteArrayInputStream(Buffers.B_10000K), bh));
 
     }
 
