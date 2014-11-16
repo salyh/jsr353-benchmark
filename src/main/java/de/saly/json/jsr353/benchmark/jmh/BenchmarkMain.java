@@ -91,7 +91,8 @@ public class BenchmarkMain {
         
         PrintStream orig = System.out;
         orig.println("Running...");
-        System.setOut(outputFile(new File("jmh_benchmark_sysout_log_t"+TSS+".txt")));
+        PrintStream pf = outputFile(new File("jmh_benchmark_sysout_log_t"+TSS+".txt"));
+        System.setOut(pf);
 
         System.out.println("Start benchmark on " + new Date());
         System.out.println("Currently loaded implementation:  " + IMPL + " (" + IMPL_FOLDER_NAME + ")");
@@ -133,6 +134,10 @@ public class BenchmarkMain {
 
         System.out.println();
         System.out.println();
+        pf.flush();
+        
+        System.setOut(orig);
+        
         final long start = System.currentTimeMillis();
 
         try {
@@ -146,6 +151,10 @@ public class BenchmarkMain {
             e.printStackTrace();
         }
 
+        orig.flush();
+        System.setOut(pf);
+        
+        
         if (System.getProperty("jsr353.skip") == null) {
 
             try {
@@ -181,7 +190,8 @@ public class BenchmarkMain {
         String endMsg = "End. Benchmark Runtime was approx " + ((end - start) / (60 * 1000)) + " min.";
         orig.println(endMsg);
         System.out.println(endMsg);
-        System.setOut(orig);
+        pf.flush();
+        orig.flush();
     }
 
     private static void runJMH(final int forks, final int threads, final int warmupit, final int measureit) throws Exception {
