@@ -32,9 +32,9 @@ public final class ClassloaderUtils {
         });
 
         for (int i = 0; i < jars.length; i++) {
-            final JarFile file = new JarFile(jars[i]);
-            final Enumeration<JarEntry> e = file.entries();
-            final Manifest mf = file.getManifest(); // If the jar has a class-path in it's manifest add it's entries
+            final JarFile jarFile = new JarFile(jars[i]);
+            final Enumeration<JarEntry> e = jarFile.entries();
+            final Manifest mf = jarFile.getManifest(); // If the jar has a class-path in it's manifest add it's entries
             final List<URL> urls = new ArrayList<URL>();
             urls.add(new URL("jar:file:" + jars[i].getAbsolutePath() + "!/"));
             System.out.println("Jar File: " + jars[i]);
@@ -55,7 +55,7 @@ public final class ClassloaderUtils {
             final URLClassLoader sysloader = (URLClassLoader) ClassLoader.getSystemClassLoader();
             final Method method = URLClassLoader.class.getDeclaredMethod("addURL", parameters);
             method.setAccessible(true);
-            method.invoke(sysloader, urlsArray);
+            method.invoke(sysloader, (Object[]) urlsArray);
             final ClassLoader cl = new URLClassLoader(urlsArray, sysloader);
 
             while (e.hasMoreElements()) {
@@ -72,7 +72,6 @@ public final class ClassloaderUtils {
 
         }
 
-        
         return jars;
     }
 
