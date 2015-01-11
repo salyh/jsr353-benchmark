@@ -9,12 +9,12 @@
 
     <groupId>de.saly</groupId>
     <artifactId>jsr353-benchmark</artifactId>
-    <version>0.7.0-SNAPSHOT</version>
+    <version>0.7.0</version>
     <name>JSR-353 Benchmark</name>
     <packaging>jar</packaging>
 
     <properties>
-        <jmh.version>1.3</jmh.version>
+        <jmh.version>1.4.1</jmh.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

@@ -19,9 +19,12 @@ package de.saly.json.jsr353.benchmark.jmh.streamingapi;
 
 import java.io.ByteArrayInputStream;
 import java.io.CharArrayReader;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.Reader;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.Map;
 
@@ -233,5 +236,20 @@ public class BenchmarkStreamParser {
         bh.consume(parse(new ByteArrayInputStream(Buffers.B_100K), bh));
 
     }
+    
+    @Benchmark
+    public void parseOnlyCombinedBytes500FileInput(final Blackhole bh) throws Exception {
+        int count = 100;
+        bh.consume(parse(new FileInputStream((new File("./generated/generated_benchmark_test_file_" + StandardCharsets.UTF_8.name() + "_" + count
+                    + ".json"))), bh));
+        bh.consume(parse(new FileInputStream((new File("./generated/generated_benchmark_test_file_" + StandardCharsets.UTF_8.name() + "_" + count
+                + ".json"))), bh));
+        bh.consume(parse(new FileInputStream((new File("./generated/generated_benchmark_test_file_" + StandardCharsets.UTF_8.name() + "_" + count
+                + ".json"))), bh));
+        bh.consume(parse(new FileInputStream((new File("./generated/generated_benchmark_test_file_" + StandardCharsets.UTF_8.name() + "_" + count
+                + ".json"))), bh));
+        bh.consume(parse(new FileInputStream((new File("./generated/generated_benchmark_test_file_" + StandardCharsets.UTF_8.name() + "_" + count
+                + ".json"))), bh));
 
+    }
 }
