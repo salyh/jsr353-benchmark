@@ -17,26 +17,12 @@ along with JSR 353 Benchmark Suite. If not, see <http://www.gnu.org/licenses/>.
 */
 package de.saly.json.jsr353.benchmark.jmh.streamingapi;
 
-import java.nio.charset.Charset;
-import java.util.Collections;
-import java.util.Map;
-
-import javax.json.Json;
-import javax.json.JsonObject;
-import javax.json.stream.JsonParser;
-import javax.json.stream.JsonParser.Event;
-import javax.json.stream.JsonParserFactory;
-
-import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
-import org.openjdk.jmh.infra.Blackhole;
-
-import de.saly.json.jsr353.benchmark.data.Buffers;
 
 @State(Scope.Benchmark)
 public class BenchmarkStructureParser {
-
+/*
     protected Charset utf8Charset = Charset.forName("UTF8");
 
     protected Map<String, ?> getConfig() {
@@ -145,5 +131,5 @@ public class BenchmarkStructureParser {
         bh.consume(parse(Buffers.O_10000K, bh));
 
     }
-
+*/
 }

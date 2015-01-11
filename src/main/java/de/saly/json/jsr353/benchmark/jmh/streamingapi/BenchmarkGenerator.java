@@ -17,29 +17,12 @@ along with JSR 353 Benchmark Suite. If not, see <http://www.gnu.org/licenses/>.
 */
 package de.saly.json.jsr353.benchmark.jmh.streamingapi;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.nio.charset.Charset;
-import java.util.Collections;
-import java.util.Map;
-import java.util.Random;
-
-import javax.json.Json;
-import javax.json.stream.JsonGenerator;
-import javax.json.stream.JsonGeneratorFactory;
-
-import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
-import org.openjdk.jmh.infra.Blackhole;
 
 @State(Scope.Benchmark)
 public class BenchmarkGenerator {
-
+/*
     protected Map<String, ?> getConfig() {
         return Collections.EMPTY_MAP;
     }
@@ -188,5 +171,5 @@ public class BenchmarkGenerator {
         final FileWriter fw = new FileWriter(tmp);
         bh.consume(generate(fw, 100000, bh));
 
-    }
+    }*/
 }
