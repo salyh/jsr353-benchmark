@@ -140,18 +140,6 @@ public class BenchmarkMain {
         for (Iterator<Entry<String, String>> it = parsers.entrySet().iterator(); it.hasNext();) {
             Entry<String, String> entry= it.next();
             
-            InputStream resourceAsStream =
-                    this.getClass().getResourceAsStream(
-                      "/META-INF/maven/com.soebes.examples/version-examples-i/pom.properties"
-                    );
-                  this.prop = new Properties();
-                  try
-                  {
-                      this.prop.load( resourceAsStream );
-            }
-            
-            
-            
             System.out.println("------------------------------------------------------------------------------------");
             System.out.println("Currently benchmarking: "+entry.getKey());
             System.out.println("------------------------------------------------------------------------------------");
