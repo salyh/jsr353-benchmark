@@ -27,17 +27,15 @@ import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.ui.RefineryUtilities;
 
-public class ResultViewer extends JFrame 
-{
+public class ResultViewer {
    
     private Map<String, Benchmark> benchmarks;
+    private JFrame frame = new JFrame("Json Parser Benchmark");
 
     public ResultViewer() throws IOException {
-        super("Json Parser Benchmark");
-
         readData();
 
-        JPanel panel = new JPanel(new GridLayout(20, 3)); // split the panel in 1 rows and 2 cols
+        JPanel panel = new JPanel(new GridLayout(20, 3));
         
         StringBuilder sb = new StringBuilder();
         sb.append("<html><body>");
@@ -65,25 +63,20 @@ public class ResultViewer extends JFrame
             sb.append("<body><html>");
             
             FileUtils.write(new File("charts/index.html"), sb.toString());
-            
-            //getContentPane().add(chartPanel);
-            //setContentPane(chartPanel);
             panel.add(chartPanel);
         }
         JScrollPane scrollFrame = new JScrollPane(panel);
-        getContentPane().add(scrollFrame);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(scrollFrame);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         
     }
     
-    
-
     public static void main(String[] args) throws IOException {
         ResultViewer chart = new ResultViewer();
-        chart.pack();
-        RefineryUtilities.centerFrameOnScreen(chart);
-        chart.setVisible(true);
+        chart.frame.pack();
+        RefineryUtilities.centerFrameOnScreen(chart.frame);
+        chart.frame.setVisible(true);
     }
 
     private CategoryDataset createDataset(String bname) throws FileNotFoundException {
@@ -137,9 +130,6 @@ public class ResultViewer extends JFrame
                 benchmark.addValue(parser, score);
             }
 
-            
-            
-            
         }
 
     }

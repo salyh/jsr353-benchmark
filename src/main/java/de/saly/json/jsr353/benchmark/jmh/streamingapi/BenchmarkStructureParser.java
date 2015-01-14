@@ -17,36 +17,45 @@ along with JSR 353 Benchmark Suite. If not, see <http://www.gnu.org/licenses/>.
 */
 package de.saly.json.jsr353.benchmark.jmh.streamingapi;
 
+import javax.json.JsonObject;
+import javax.json.stream.JsonParser;
+import javax.json.stream.JsonParser.Event;
+
+import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.infra.Blackhole;
+
+import de.saly.json.jsr353.benchmark.data.Buffers;
+import de.saly.json.jsr353.benchmark.jsr353.Jsr353Parser;
 
 @State(Scope.Benchmark)
 public class BenchmarkStructureParser {
-/*
-    protected Charset utf8Charset = Charset.forName("UTF8");
 
-    protected Map<String, ?> getConfig() {
-        return Collections.EMPTY_MAP;
-    }
+    private Jsr353Parser parser;
 
-    public BenchmarkStructureParser() {
+    public BenchmarkStructureParser(){
         super();
-        if (!Charset.defaultCharset().equals(Charset.forName("UTF-8"))) {
-            throw new RuntimeException("Default charset is " + Charset.defaultCharset() + ", must must be UTF-8");
+        
+        try {
+            parser = (Jsr353Parser) Class.forName(System.getProperty("benchmark.impl")).newInstance();
+            parser.init(null);
+        } catch (ClassCastException e) {
+            //ignore
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
-
-    protected final JsonParserFactory parserFactory = Json.createParserFactory(getConfig());
 
     protected Object parse(final JsonObject jo, final Blackhole bh) throws Exception {
-        final JsonParser parser = parserFactory.createParser(jo);
+        final JsonParser jparser = parser.getParserFactory().createParser(jo);
 
-        while (parser.hasNext()) {
-            final Event e = parser.next();
+        while (jparser.hasNext()) {
+            final Event e = jparser.next();
             bh.consume(e);
         }
-        parser.close();
-        return parser;
+        jparser.close();
+        return jparser;
     }
 
     // -- parse in memory
@@ -131,5 +140,5 @@ public class BenchmarkStructureParser {
         bh.consume(parse(Buffers.O_10000K, bh));
 
     }
-*/
+
 }

@@ -21,12 +21,15 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FilenameFilter;
 import java.io.PrintStream;
 import java.lang.management.GarbageCollectorMXBean;
 import java.lang.management.ManagementFactory;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -42,11 +45,22 @@ import org.openjdk.jmh.runner.options.VerboseMode;
 
 import de.saly.json.jsr353.benchmark.data.Buffers;
 import de.saly.json.jsr353.benchmark.data.CreateJsonTestFiles;
+import de.saly.json.jsr353.benchmark.visual.ResultViewer;
 
 public class BenchmarkMain {
 
     private static final String TSS = new SimpleDateFormat("yyyyMMdd-HHmm").format(new Date());
+    private static final Map<String, String> parsers = new LinkedHashMap<String, String>();
 
+    static {
+        parsers.put("Jackson", "de.saly.json.jsr353.benchmark.jackson.JacksonParser");
+        parsers.put("GSON", "de.saly.json.jsr353.benchmark.gson.GsonParser");
+        parsers.put("Apache Johnzon", "de.saly.json.jsr353.benchmark.jsr353.JohnzonParser");
+        //parsers.put("Boon", "de.saly.json.jsr353.benchmark.boon.BoonParser");
+        parsers.put("Glassfish JSR 353 RI (JSONP)", "de.saly.json.jsr353.benchmark.jsr353.JsonpRiParser");
+        parsers.put("Genson", "de.saly.json.jsr353.benchmark.jsr353.GensonParser");
+    }
+    
     private BenchmarkMain() {
 
     }
@@ -59,6 +73,20 @@ public class BenchmarkMain {
         CreateJsonTestFiles.create(null);
         // initialize Buffers
         Buffers.init();
+        
+        File[] files = new File(".").listFiles(new FilenameFilter() {
+
+            @Override
+            public boolean accept(File dir, String name) {
+
+                return name.startsWith("jmh_benchmark_");
+            }
+        });
+        
+        for (int i = 0; i < files.length; i++) {
+            File file = files[i];
+            file.delete();
+        }
         
         PrintStream orig = System.out;
         orig.println("Running...");
@@ -107,106 +135,47 @@ public class BenchmarkMain {
         System.out.println();
         pf.flush();
         
-        System.setOut(orig);
-        
         final long start = System.currentTimeMillis();
 
-        System.out.println("------------------------------------------------------------------------------------");
-        System.out.println("Currently loaded implementation:  JacksonParser");
-        System.out.println("------------------------------------------------------------------------------------");
-
-        
-        try {
-            runJMH("de.saly.json.jsr353.benchmark.jackson.JacksonParser", 1, 1, 3, 3);
-            // runJMH(1, 2, 3, 5); //1 fork, 2 threads, 3 warmup, 5 measurement
-            // runJMH(1, 4, 2, 5);
-            // runJMH(2,8,5,10);
-            // runJMH(2,16,3,5);
-        } catch (final Exception e) {
-            System.out.println(e);
-            e.printStackTrace();
-        }
-        
-        System.out.println("------------------------------------------------------------------------------------");
-        System.out.println("Currently loaded implementation:  GSONParser");
-        System.out.println("------------------------------------------------------------------------------------");
-
-        
-        try {
-            runJMH("de.saly.json.jsr353.benchmark.gson.GsonParser", 1, 1, 3, 3);
-            // runJMH(1, 2, 3, 5); //1 fork, 2 threads, 3 warmup, 5 measurement
-            // runJMH(1, 4, 2, 5);
-            // runJMH(2,8,5,10);
-            // runJMH(2,16,3,5);
-        } catch (final Exception e) {
-            System.out.println(e);
-            e.printStackTrace();
-        }
-        
-        System.out.println("------------------------------------------------------------------------------------");
-        System.out.println("Currently loaded implementation:  BoonParser");
-        System.out.println("------------------------------------------------------------------------------------");
-
-        
-        try {
-            runJMH("de.saly.json.jsr353.benchmark.boon.BoonParser", 1, 1, 3, 3);
-            // runJMH(1, 2, 3, 5); //1 fork, 2 threads, 3 warmup, 5 measurement
-            // runJMH(1, 4, 2, 5);
-            // runJMH(2,8,5,10);
-            // runJMH(2,16,3,5);
-        } catch (final Exception e) {
-            System.out.println(e);
-            e.printStackTrace();
-        }
-        
-        System.out.println("------------------------------------------------------------------------------------");
-        System.out.println("Currently loaded implementation:  JohnzonParser");
-        System.out.println("------------------------------------------------------------------------------------");
-
-        try {
+        for (Iterator<Entry<String, String>> it = parsers.entrySet().iterator(); it.hasNext();) {
+            Entry<String, String> entry= it.next();
             
-            runJMH("de.saly.json.jsr353.benchmark.jsr353.JohnzonParser", 1, 1, 3, 3);
-            // runJMH(1, 2, 3, 5); //1 fork, 2 threads, 3 warmup, 5 measurement
-            // runJMH(1, 4, 2, 5);
-            // runJMH(2,8,5,10);
-            // runJMH(2,16,3,5);
-        } catch (final Exception e) {
-            System.out.println(e);
-            e.printStackTrace();
-        }
-        
-        
-        System.out.println("------------------------------------------------------------------------------------");
-        System.out.println("Currently loaded implementation:  Glassfish JSR 353 RI (JSONP)");
-        System.out.println("------------------------------------------------------------------------------------");
-
-        try {
+            InputStream resourceAsStream =
+                    this.getClass().getResourceAsStream(
+                      "/META-INF/maven/com.soebes.examples/version-examples-i/pom.properties"
+                    );
+                  this.prop = new Properties();
+                  try
+                  {
+                      this.prop.load( resourceAsStream );
+            }
             
-            runJMH("de.saly.json.jsr353.benchmark.jsr353.JsonpRiParser", 1, 1, 3, 3);
-            // runJMH(1, 2, 3, 5); //1 fork, 2 threads, 3 warmup, 5 measurement
-            // runJMH(1, 4, 2, 5);
-            // runJMH(2,8,5,10);
-            // runJMH(2,16,3,5);
-        } catch (final Exception e) {
-            System.out.println(e);
-            e.printStackTrace();
+            
+            
+            System.out.println("------------------------------------------------------------------------------------");
+            System.out.println("Currently benchmarking: "+entry.getKey());
+            System.out.println("------------------------------------------------------------------------------------");
+            
+            orig.println("------------------------------------------------------------------------------------");
+            orig.println("Currently benchmarking: "+entry.getKey());
+            orig.println("------------------------------------------------------------------------------------");
+            
+            
+            try {
+                runJMH(entry.getValue(), 1, 1, 3, 3);
+                // runJMH(1, 2, 3, 5); //1 fork, 2 threads, 3 warmup, 5 measurement
+                // runJMH(1, 4, 2, 5);
+                // runJMH(2,8,5,10);
+                // runJMH(2,16,3,5);
+            } catch (final Exception e) {
+                System.out.println(e);
+                orig.println(e);
+                e.printStackTrace(System.out);
+                e.printStackTrace(orig);
+            }
+            
         }
         
-        System.out.println("------------------------------------------------------------------------------------");
-        System.out.println("Currently loaded implementation:  Genson JSR 353");
-        System.out.println("------------------------------------------------------------------------------------");
-
-        try {
-            
-            runJMH("de.saly.json.jsr353.benchmark.jsr353.GensonParser", 1, 1, 3, 3);
-            // runJMH(1, 2, 3, 5); //1 fork, 2 threads, 3 warmup, 5 measurement
-            // runJMH(1, 4, 2, 5);
-            // runJMH(2,8,5,10);
-            // runJMH(2,16,3,5);
-        } catch (final Exception e) {
-            System.out.println(e);
-            e.printStackTrace();
-        }
         
         orig.flush();
         System.setOut(pf);
@@ -249,6 +218,8 @@ public class BenchmarkMain {
         System.out.println(endMsg);
         pf.flush();
         orig.flush();
+        
+        ResultViewer.main(null);
     }
 
     private static void runJMH(final String parserClasss, final int forks, final int threads, final int warmupit, final int measureit) throws Exception {

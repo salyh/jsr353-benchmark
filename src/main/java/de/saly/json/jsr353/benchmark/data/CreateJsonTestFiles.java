@@ -22,6 +22,11 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
 import org.apache.commons.io.output.FileWriterWithEncoding;
+import org.apache.johnzon.mapper.Mapper;
+import org.apache.johnzon.mapper.MapperBuilder;
+
+import de.saly.json.jsr353.benchmark.data.model.Collection;
+import de.saly.json.jsr353.benchmark.data.model.Simple;
 
 public class CreateJsonTestFiles {
 
@@ -65,7 +70,23 @@ public class CreateJsonTestFiles {
 
         create(path, 10000000, StandardCharsets.UTF_8); // 10gb
         createBigStack(path, 10000000 * 10, StandardCharsets.UTF_8);
-
+        
+        Mapper mapper = new MapperBuilder().build();
+        File json = new File(path + "/" + "generated_benchmark_test_file_" + StandardCharsets.UTF_8.name() + "_mapping_simple.json");
+        FileWriterWithEncoding sb = new FileWriterWithEncoding(json, StandardCharsets.UTF_8);
+        Simple simple = new Simple();
+        simple.init();
+        mapper.writeObject(simple, sb);
+        sb.close();
+        
+        json = new File(path + "/" + "generated_benchmark_test_file_" + StandardCharsets.UTF_8.name() + "_mapping_collection.json");
+        sb = new FileWriterWithEncoding(json, StandardCharsets.UTF_8);
+        Collection co = new Collection();
+        co.init();
+        mapper.writeObject(co, sb);
+        sb.close();
+        
+        
         System.out.println("Finished.");
         System.out.println();
     }

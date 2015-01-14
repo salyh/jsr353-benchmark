@@ -17,27 +17,43 @@ along with JSR 353 Benchmark Suite. If not, see <http://www.gnu.org/licenses/>.
 */
 package de.saly.json.jsr353.benchmark.jmh.streamingapi;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.StringWriter;
+import java.io.Writer;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.Random;
+
+import javax.json.stream.JsonGenerator;
+
+import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;
+import org.openjdk.jmh.infra.Blackhole;
+
+import de.saly.json.jsr353.benchmark.jsr353.Jsr353Parser;
 
 @State(Scope.Benchmark)
 public class BenchmarkGenerator {
-/*
-    protected Map<String, ?> getConfig() {
-        return Collections.EMPTY_MAP;
-    }
 
-    public BenchmarkGenerator() {
+    private Jsr353Parser parser;
+
+    public BenchmarkGenerator(){
         super();
-        if (!Charset.defaultCharset().equals(Charset.forName("UTF-8"))) {
-            throw new RuntimeException("Default charset is " + Charset.defaultCharset() + ", must must be UTF-8");
+        
+        try {
+            parser = (Jsr353Parser) Class.forName(System.getProperty("benchmark.impl")).newInstance();
+            parser.init(null);
+        } catch (ClassCastException e) {
+            //ignore
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
     }
 
-    protected final JsonGeneratorFactory generatorFactory = Json.createGeneratorFactory(getConfig());
-
     protected Object generate(final Writer writer, final int count, final Blackhole bh) throws Exception {
-        final JsonGenerator generator = generatorFactory.createGenerator(writer);
+        final JsonGenerator generator = parser.getGeneratorFactory().createGenerator(writer);
         final Random rand = new Random(System.currentTimeMillis());
 
         generator.writeStartObject();
@@ -171,5 +187,5 @@ public class BenchmarkGenerator {
         final FileWriter fw = new FileWriter(tmp);
         bh.consume(generate(fw, 100000, bh));
 
-    }*/
+    }
 }

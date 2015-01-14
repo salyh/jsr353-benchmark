@@ -8,9 +8,9 @@
     </prerequisites>
 
     <groupId>de.saly</groupId>
-    <artifactId>jsr353-benchmark</artifactId>
-    <version>0.7.0</version>
-    <name>JSR-353 Benchmark</name>
+    <artifactId>json-parser-benchmark</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>JSON Parser Benchmark</name>
     <packaging>jar</packaging>
 
     <properties>
@@ -58,53 +58,56 @@
     </distributionManagement>
 
     <dependencies>
-        <!-- <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-json_1.0_spec</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency> -->
-        
+        <!-- <dependency> <groupId>org.apache.geronimo.specs</groupId> <artifactId>geronimo-json_1.0_spec</artifactId> 
+            <version>1.0-SNAPSHOT</version> </dependency> -->
+
         <dependency>
-    <groupId>org.glassfish</groupId>
-    <artifactId>javax.json</artifactId>
-    <version>1.0.4</version>
-</dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+            <version>1.0.4</version>
+        </dependency>
 
-<dependency>
-  <groupId>com.owlike</groupId>
-  <artifactId>genson</artifactId>
-  <version>1.2</version>
-</dependency>
-        
         <dependency>
-    <groupId>javax.json</groupId>
-    <artifactId>javax.json-api</artifactId>
-    <version>1.0</version>
-</dependency>
-        
-<dependency>
-    <groupId>com.google.code.gson</groupId>
-    <artifactId>gson</artifactId>
-    <version>2.3.1</version>
-</dependency>
+            <groupId>com.owlike</groupId>
+            <artifactId>genson</artifactId>
+            <version>1.2</version>
+        </dependency>
 
-<dependency>
-    <groupId>io.fastjson</groupId>
-    <artifactId>boon</artifactId>
-    <version>0.30</version>
-</dependency>
+        <dependency>
+            <groupId>javax.json</groupId>
+            <artifactId>javax.json-api</artifactId>
+            <version>1.0</version>
+        </dependency>
 
-<dependency>
-    <groupId>org.jfree</groupId>
-    <artifactId>jfreechart</artifactId>
-    <version>1.0.19</version>
-</dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.fastjson</groupId>
+            <artifactId>boon</artifactId>
+            <version>0.30</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.0.19</version>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.johnzon</groupId>
             <artifactId>johnzon-core</artifactId>
             <version>0.5-incubating-SNAPSHOT</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.johnzon</groupId>
+            <artifactId>johnzon-mapper</artifactId>
+            <version>0.5-incubating-SNAPSHOT</version>
+        </dependency>
+
         <dependency>
             <groupId>org.openjdk.jmh</groupId>
             <artifactId>jmh-core</artifactId>
@@ -120,20 +123,20 @@
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
         </dependency>
-        
+
         <!-- Jackson -->
         <dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-core</artifactId>
-    <version>2.5.0</version>
-</dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.5.0</version>
+        </dependency>
 
-<dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-databind</artifactId>
-    <version>2.5.0</version>
-</dependency>
-        
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>

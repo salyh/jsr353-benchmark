@@ -1,17 +1,8 @@
 package de.saly.json.jsr353.benchmark.boon;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.Reader;
-import java.util.Map;
 
-import org.boon.json.JsonParserAndMapper;
-import org.boon.json.JsonParserFactory;
-import org.openjdk.jmh.infra.Blackhole;
-
-import de.saly.json.jsr353.benchmark.BenchmarkEnabledParser;
-
-public class BoonParser implements BenchmarkEnabledParser{
+public class BoonParser //implements BenchmarkEnabledParser
+{/*
 
     private JsonParserAndMapper parser;
     
@@ -60,5 +51,5 @@ public class BoonParser implements BenchmarkEnabledParser{
         bh.consume(parser.parse (in));
         
     }
-
+*/
 }

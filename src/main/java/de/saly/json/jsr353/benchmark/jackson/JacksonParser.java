@@ -1,5 +1,7 @@
 package de.saly.json.jsr353.benchmark.jackson;
 
+import java.io.ByteArrayOutputStream;
+import java.io.CharArrayWriter;
 import java.io.File;
 import java.io.InputStream;
 import java.io.Reader;
@@ -64,6 +66,8 @@ public class JacksonParser implements BenchmarkEnabledParser {
     public void readToStructure(InputStream in, Blackhole bh) throws Exception {
         bh.consume(mapper.readValue(in, JsonNode.class));
     }
+    
+    
 
     protected Object parse(JsonParser jParser, Blackhole bh) throws Exception {
         
@@ -74,5 +78,49 @@ public class JacksonParser implements BenchmarkEnabledParser {
           jParser.close();
           return jParser;
     }
+
+
+    @Override
+    public void serialize(File file, Object o, Blackhole bh) throws Exception {
+        mapper.writeValue(file, o);
+        bh.consume(file);
+        
+    }
+
+
+    @Override
+    public void serialize(CharArrayWriter writer, Object o, Blackhole bh) throws Exception {
+        mapper.writeValue(writer, o);
+        bh.consume(writer);
+    }
+
+
+    @Override
+    public void serialize(ByteArrayOutputStream out, Object o, Blackhole bh) throws Exception {
+        mapper.writeValue(out, o);
+        bh.consume(out);
+        
+    }
+
+
+    @Override
+    public void deserialize(File file, Class clazz, Blackhole bh) throws Exception {
+        bh.consume(mapper.readValue(file, clazz));
+        
+    }
+
+    @Override
+    public void deserialize(Reader reader, Class clazz, Blackhole bh) throws Exception {
+        bh.consume(mapper.readValue(reader, clazz));
+        
+    }
+
+    @Override
+    public void deserialize(InputStream in, Class clazz, Blackhole bh) throws Exception {
+        bh.consume(mapper.readValue(in, clazz));
+        
+    }
+
+    
 
 }

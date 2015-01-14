@@ -1,5 +1,7 @@
 package de.saly.json.jsr353.benchmark.jsr353;
 
+import java.io.ByteArrayOutputStream;
+import java.io.CharArrayWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -8,6 +10,7 @@ import java.io.Reader;
 import javax.json.JsonReader;
 import javax.json.JsonReaderFactory;
 import javax.json.JsonStructure;
+import javax.json.stream.JsonGeneratorFactory;
 import javax.json.stream.JsonParser;
 import javax.json.stream.JsonParser.Event;
 import javax.json.stream.JsonParserFactory;
@@ -17,15 +20,14 @@ import org.openjdk.jmh.infra.Blackhole;
 import de.saly.json.jsr353.benchmark.BenchmarkEnabledParser;
 
 public abstract class Jsr353Parser implements BenchmarkEnabledParser {
-
-    protected JsonParserFactory parserFactory;
-    protected JsonReaderFactory readerFactory;
     
     public Jsr353Parser() {
         
     }
 
-    
+    public abstract JsonGeneratorFactory getGeneratorFactory();
+    public abstract JsonParserFactory getParserFactory();
+    public  abstract JsonReaderFactory getReaderFactory();
 
     @Override
     public void parseOnly(File file, final Blackhole bh) throws Exception {
@@ -63,10 +65,54 @@ public abstract class Jsr353Parser implements BenchmarkEnabledParser {
         bh.consume(read(in, bh));
         
     }
+    
+
+    @Override
+    public void serialize(File file, Object o, Blackhole bh) throws Exception {
+        throw new Exception("not implemented");
+        
+    }
+
+
+    @Override
+    public void serialize(CharArrayWriter writer, Object o, Blackhole bh) throws Exception {
+        throw new Exception("not implemented");
+        
+    }
+
+
+
+    @Override
+    public void serialize(ByteArrayOutputStream out, Object o, Blackhole bh) throws Exception {
+        throw new Exception("not implemented");
+        
+    }
+
+
+    @Override
+    public void deserialize(File file, Class clazz, Blackhole bh) throws Exception {
+        throw new Exception("not implemented");
+        
+    }
+
+
+    @Override
+    public void deserialize(Reader reader, Class clazz, Blackhole bh) throws Exception {
+        throw new Exception("not implemented");
+        
+    }
+
+
+    @Override
+    public void deserialize(InputStream in, Class clazz, Blackhole bh) throws Exception {
+        throw new Exception("not implemented");
+        
+    }
+
 
 
     protected Object read(final InputStream stream, final Blackhole bh) throws Exception {
-        final JsonReader jreader = readerFactory.createReader(stream);
+        final JsonReader jreader = getReaderFactory().createReader(stream);
         final JsonStructure js = jreader.read();
         bh.consume(js);
         jreader.close();
@@ -74,7 +120,7 @@ public abstract class Jsr353Parser implements BenchmarkEnabledParser {
     }
 
     protected Object read(final Reader reader, final Blackhole bh) throws Exception {
-        final JsonReader jreader = readerFactory.createReader(reader);
+        final JsonReader jreader = getReaderFactory().createReader(reader);
         final JsonStructure js = jreader.read();
         bh.consume(js);
         jreader.close();
@@ -83,7 +129,7 @@ public abstract class Jsr353Parser implements BenchmarkEnabledParser {
     
 
     protected Object parse(final InputStream stream, final Blackhole bh) throws Exception {
-        final JsonParser parser = parserFactory.createParser(stream);
+        final JsonParser parser = getParserFactory().createParser(stream);
 
         while (parser.hasNext()) {
             final Event e = parser.next();
@@ -94,7 +140,7 @@ public abstract class Jsr353Parser implements BenchmarkEnabledParser {
     }
 
     protected Object parse(final Reader reader, final Blackhole bh) throws Exception {
-        final JsonParser parser = parserFactory.createParser(reader);
+        final JsonParser parser = getParserFactory().createParser(reader);
 
         while (parser.hasNext()) {
             final Event e = parser.next();
