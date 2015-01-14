@@ -1,0 +1,2545 @@
+[
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 6.090186996934816,
+            "scoreError" : 15.196956127592488,
+            "scoreConfidence" : [
+                -9.106769130657671,
+                21.287143124527304
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5.297334999050894,
+                "50.0" : 6.014996244923773,
+                "90.0" : 6.9582297468297805,
+                "95.0" : 6.9582297468297805,
+                "99.0" : 6.9582297468297805,
+                "99.9" : 6.9582297468297805,
+                "99.99" : 6.9582297468297805,
+                "99.999" : 6.9582297468297805,
+                "99.9999" : 6.9582297468297805,
+                "100.0" : 6.9582297468297805
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    6.014996244923773,
+                    5.297334999050894,
+                    6.9582297468297805
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kBytesUTF16",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 4.737286603570277,
+            "scoreError" : 3.5687265054742587,
+            "scoreConfidence" : [
+                1.1685600980960187,
+                8.306013109044535
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4.614759847897515,
+                "50.0" : 4.634217361786398,
+                "90.0" : 4.962882601026919,
+                "95.0" : 4.962882601026919,
+                "99.0" : 4.962882601026919,
+                "99.9" : 4.962882601026919,
+                "99.99" : 4.962882601026919,
+                "99.999" : 4.962882601026919,
+                "99.9999" : 4.962882601026919,
+                "100.0" : 4.962882601026919
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4.614759847897515,
+                    4.962882601026919,
+                    4.634217361786398
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 8.122900311108333,
+            "scoreError" : 4.663024414921953,
+            "scoreConfidence" : [
+                3.4598758961863805,
+                12.785924726030286
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7.942598838196355,
+                "50.0" : 8.01069516812669,
+                "90.0" : 8.415406927001955,
+                "95.0" : 8.415406927001955,
+                "99.0" : 8.415406927001955,
+                "99.9" : 8.415406927001955,
+                "99.99" : 8.415406927001955,
+                "99.999" : 8.415406927001955,
+                "99.9999" : 8.415406927001955,
+                "100.0" : 8.415406927001955
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    8.01069516812669,
+                    8.415406927001955,
+                    7.942598838196355
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kCharsUTF16",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 8.233890007503275,
+            "scoreError" : 3.7253095226838218,
+            "scoreConfidence" : [
+                4.508580484819453,
+                11.959199530187096
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8.033526584278388,
+                "50.0" : 8.226427856512817,
+                "90.0" : 8.44171558171862,
+                "95.0" : 8.44171558171862,
+                "99.0" : 8.44171558171862,
+                "99.9" : 8.44171558171862,
+                "99.99" : 8.44171558171862,
+                "99.999" : 8.44171558171862,
+                "99.9999" : 8.44171558171862,
+                "100.0" : 8.44171558171862
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    8.033526584278388,
+                    8.44171558171862,
+                    8.226427856512817
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 80.06761641529916,
+            "scoreError" : 17.166878654112516,
+            "scoreConfidence" : [
+                62.90073776118664,
+                97.23449506941168
+            ],
+            "scorePercentiles" : {
+                "0.0" : 78.98122122738792,
+                "50.0" : 80.59525065122952,
+                "90.0" : 80.62637736728003,
+                "95.0" : 80.62637736728003,
+                "99.0" : 80.62637736728003,
+                "99.9" : 80.62637736728003,
+                "99.99" : 80.62637736728003,
+                "99.999" : 80.62637736728003,
+                "99.9999" : 80.62637736728003,
+                "100.0" : 80.62637736728003
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    78.98122122738792,
+                    80.62637736728003,
+                    80.59525065122952
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kBytesUTF16",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 58.97246776592047,
+            "scoreError" : 18.859090342671024,
+            "scoreConfidence" : [
+                40.113377423249446,
+                77.8315581085915
+            ],
+            "scorePercentiles" : {
+                "0.0" : 58.18167474471557,
+                "50.0" : 58.59353663635361,
+                "90.0" : 60.14219191669222,
+                "95.0" : 60.14219191669222,
+                "99.0" : 60.14219191669222,
+                "99.9" : 60.14219191669222,
+                "99.99" : 60.14219191669222,
+                "99.999" : 60.14219191669222,
+                "99.9999" : 60.14219191669222,
+                "100.0" : 60.14219191669222
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    58.59353663635361,
+                    58.18167474471557,
+                    60.14219191669222
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 95.02868694739554,
+            "scoreError" : 7.348141493740607,
+            "scoreConfidence" : [
+                87.68054545365493,
+                102.37682844113615
+            ],
+            "scorePercentiles" : {
+                "0.0" : 94.57941715434178,
+                "50.0" : 95.14917606760349,
+                "90.0" : 95.35746762024134,
+                "95.0" : 95.35746762024134,
+                "99.0" : 95.35746762024134,
+                "99.9" : 95.35746762024134,
+                "99.99" : 95.35746762024134,
+                "99.999" : 95.35746762024134,
+                "99.9999" : 95.35746762024134,
+                "100.0" : 95.35746762024134
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    95.35746762024134,
+                    95.14917606760349,
+                    94.57941715434178
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kCharsUTF16",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 94.88996103220802,
+            "scoreError" : 9.963117100140046,
+            "scoreConfidence" : [
+                84.92684393206798,
+                104.85307813234806
+            ],
+            "scorePercentiles" : {
+                "0.0" : 94.35817568896367,
+                "50.0" : 94.86235472329649,
+                "90.0" : 95.4493526843639,
+                "95.0" : 95.4493526843639,
+                "99.0" : 95.4493526843639,
+                "99.9" : 95.4493526843639,
+                "99.99" : 95.4493526843639,
+                "99.999" : 95.4493526843639,
+                "99.9999" : 95.4493526843639,
+                "100.0" : 95.4493526843639
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    94.35817568896367,
+                    95.4493526843639,
+                    94.86235472329649
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read100kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 842.5830281325057,
+            "scoreError" : 339.0264411393313,
+            "scoreConfidence" : [
+                503.55658699317434,
+                1181.609469271837
+            ],
+            "scorePercentiles" : {
+                "0.0" : 825.0099880143828,
+                "50.0" : 840.7053138167222,
+                "90.0" : 862.0337825664119,
+                "95.0" : 862.0337825664119,
+                "99.0" : 862.0337825664119,
+                "99.9" : 862.0337825664119,
+                "99.99" : 862.0337825664119,
+                "99.999" : 862.0337825664119,
+                "99.9999" : 862.0337825664119,
+                "100.0" : 862.0337825664119
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    825.0099880143828,
+                    840.7053138167222,
+                    862.0337825664119
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read100kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 991.1473210556138,
+            "scoreError" : 218.67085069614765,
+            "scoreConfidence" : [
+                772.4764703594661,
+                1209.8181717517614
+            ],
+            "scorePercentiles" : {
+                "0.0" : 977.555095842252,
+                "50.0" : 995.6840428949837,
+                "90.0" : 1000.202824429606,
+                "95.0" : 1000.202824429606,
+                "99.0" : 1000.202824429606,
+                "99.9" : 1000.202824429606,
+                "99.99" : 1000.202824429606,
+                "99.999" : 1000.202824429606,
+                "99.9999" : 1000.202824429606,
+                "100.0" : 1000.202824429606
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    977.555095842252,
+                    1000.202824429606,
+                    995.6840428949837
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 8496.650123113206,
+            "scoreError" : 2124.3159287288854,
+            "scoreConfidence" : [
+                6372.334194384321,
+                10620.966051842091
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8364.633133180441,
+                "50.0" : 8540.587718371828,
+                "90.0" : 8584.72951778735,
+                "95.0" : 8584.72951778735,
+                "99.0" : 8584.72951778735,
+                "99.9" : 8584.72951778735,
+                "99.99" : 8584.72951778735,
+                "99.999" : 8584.72951778735,
+                "99.9999" : 8584.72951778735,
+                "100.0" : 8584.72951778735
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    8364.633133180441,
+                    8540.587718371828,
+                    8584.72951778735
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 10164.95041224241,
+            "scoreError" : 3733.4003741995657,
+            "scoreConfidence" : [
+                6431.550038042844,
+                13898.350786441975
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9931.16667249013,
+                "50.0" : 10252.067908578147,
+                "90.0" : 10311.616655658949,
+                "95.0" : 10311.616655658949,
+                "99.0" : 10311.616655658949,
+                "99.9" : 10311.616655658949,
+                "99.99" : 10311.616655658949,
+                "99.999" : 10311.616655658949,
+                "99.9999" : 10311.616655658949,
+                "100.0" : 10311.616655658949
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    9931.16667249013,
+                    10311.616655658949,
+                    10252.067908578147
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 77946.60608300094,
+            "scoreError" : 18071.598810608582,
+            "scoreConfidence" : [
+                59875.00727239235,
+                96018.20489360952
+            ],
+            "scorePercentiles" : {
+                "0.0" : 76830.98022430611,
+                "50.0" : 78285.89248696118,
+                "90.0" : 78722.9455377355,
+                "95.0" : 78722.9455377355,
+                "99.0" : 78722.9455377355,
+                "99.9" : 78722.9455377355,
+                "99.99" : 78722.9455377355,
+                "99.999" : 78722.9455377355,
+                "99.9999" : 78722.9455377355,
+                "100.0" : 78722.9455377355
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    78285.89248696118,
+                    78722.9455377355,
+                    76830.98022430611
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 99309.40860986405,
+            "scoreError" : 24012.199473928846,
+            "scoreConfidence" : [
+                75297.2091359352,
+                123321.6080837929
+            ],
+            "scorePercentiles" : {
+                "0.0" : 97838.1783602531,
+                "50.0" : 99714.9230912296,
+                "90.0" : 100375.12437810945,
+                "95.0" : 100375.12437810945,
+                "99.0" : 100375.12437810945,
+                "99.9" : 100375.12437810945,
+                "99.99" : 100375.12437810945,
+                "99.999" : 100375.12437810945,
+                "99.9999" : 100375.12437810945,
+                "100.0" : 100375.12437810945
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    97838.1783602531,
+                    99714.9230912296,
+                    100375.12437810945
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedBytes500",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 163.4979482647989,
+            "scoreError" : 102.52447087445925,
+            "scoreConfidence" : [
+                60.97347739033965,
+                266.02241913925815
+            ],
+            "scorePercentiles" : {
+                "0.0" : 157.37286911657046,
+                "50.0" : 164.70476175356993,
+                "90.0" : 168.41621392425628,
+                "95.0" : 168.41621392425628,
+                "99.0" : 168.41621392425628,
+                "99.9" : 168.41621392425628,
+                "99.99" : 168.41621392425628,
+                "99.999" : 168.41621392425628,
+                "99.9999" : 168.41621392425628,
+                "100.0" : 168.41621392425628
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    157.37286911657046,
+                    164.70476175356993,
+                    168.41621392425628
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedBytes5000",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 14.604924353026432,
+            "scoreError" : 8.556174721598811,
+            "scoreConfidence" : [
+                6.04874963142762,
+                23.16109907462524
+            ],
+            "scorePercentiles" : {
+                "0.0" : 14.124346984357757,
+                "50.0" : 14.629022615493696,
+                "90.0" : 15.06140345922784,
+                "95.0" : 15.06140345922784,
+                "99.0" : 15.06140345922784,
+                "99.9" : 15.06140345922784,
+                "99.99" : 15.06140345922784,
+                "99.999" : 15.06140345922784,
+                "99.9999" : 15.06140345922784,
+                "100.0" : 15.06140345922784
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    14.629022615493696,
+                    15.06140345922784,
+                    14.124346984357757
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedBytes50000",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1.3492888832052714,
+            "scoreError" : 0.3766994614721527,
+            "scoreConfidence" : [
+                0.9725894217331187,
+                1.725988344677424
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.3270246581086846,
+                "50.0" : 1.3530335011094874,
+                "90.0" : 1.3678084903976424,
+                "95.0" : 1.3678084903976424,
+                "99.0" : 1.3678084903976424,
+                "99.9" : 1.3678084903976424,
+                "99.99" : 1.3678084903976424,
+                "99.999" : 1.3678084903976424,
+                "99.9999" : 1.3678084903976424,
+                "100.0" : 1.3678084903976424
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1.3678084903976424,
+                    1.3530335011094874,
+                    1.3270246581086846
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedChars500",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 192.00746692788422,
+            "scoreError" : 52.26447332396957,
+            "scoreConfidence" : [
+                139.74299360391467,
+                244.27194025185378
+            ],
+            "scorePercentiles" : {
+                "0.0" : 189.1612589776929,
+                "50.0" : 191.97065335670138,
+                "90.0" : 194.89048844925838,
+                "95.0" : 194.89048844925838,
+                "99.0" : 194.89048844925838,
+                "99.9" : 194.89048844925838,
+                "99.99" : 194.89048844925838,
+                "99.999" : 194.89048844925838,
+                "99.9999" : 194.89048844925838,
+                "100.0" : 194.89048844925838
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    189.1612589776929,
+                    194.89048844925838,
+                    191.97065335670138
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedChars5000",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 17.865654205074602,
+            "scoreError" : 7.482951992209,
+            "scoreConfidence" : [
+                10.382702212865603,
+                25.3486061972836
+            ],
+            "scorePercentiles" : {
+                "0.0" : 17.598817359473443,
+                "50.0" : 17.660200090067022,
+                "90.0" : 18.337945165683333,
+                "95.0" : 18.337945165683333,
+                "99.0" : 18.337945165683333,
+                "99.9" : 18.337945165683333,
+                "99.99" : 18.337945165683333,
+                "99.999" : 18.337945165683333,
+                "99.9999" : 18.337945165683333,
+                "100.0" : 18.337945165683333
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    17.598817359473443,
+                    17.660200090067022,
+                    18.337945165683333
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedChars50000",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1.6321650354002484,
+            "scoreError" : 0.6724059431689104,
+            "scoreConfidence" : [
+                0.9597590922313379,
+                2.304570978569159
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.5903434346647158,
+                "50.0" : 1.6462463525354252,
+                "90.0" : 1.6599053190006041,
+                "95.0" : 1.6599053190006041,
+                "99.0" : 1.6599053190006041,
+                "99.9" : 1.6599053190006041,
+                "99.99" : 1.6599053190006041,
+                "99.999" : 1.6599053190006041,
+                "99.9999" : 1.6599053190006041,
+                "100.0" : 1.6599053190006041
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1.6599053190006041,
+                    1.5903434346647158,
+                    1.6462463525354252
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100000InFile",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1.1091033920735403,
+            "scoreError" : 0.30621486533414377,
+            "scoreConfidence" : [
+                0.8028885267393965,
+                1.4153182574076841
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.0940853200555138,
+                "50.0" : 1.1060026079541496,
+                "90.0" : 1.1272222482109573,
+                "95.0" : 1.1272222482109573,
+                "99.0" : 1.1272222482109573,
+                "99.9" : 1.1272222482109573,
+                "99.99" : 1.1272222482109573,
+                "99.999" : 1.1272222482109573,
+                "99.9999" : 1.1272222482109573,
+                "100.0" : 1.1272222482109573
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1.0940853200555138,
+                    1.1272222482109573,
+                    1.1060026079541496
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10000InFile",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 8.679349166462766,
+            "scoreError" : 2.1436545792906334,
+            "scoreConfidence" : [
+                6.535694587172133,
+                10.823003745753399
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8.55175139868645,
+                "50.0" : 8.703203359049688,
+                "90.0" : 8.783092741652158,
+                "95.0" : 8.783092741652158,
+                "99.0" : 8.783092741652158,
+                "99.9" : 8.783092741652158,
+                "99.99" : 8.783092741652158,
+                "99.999" : 8.783092741652158,
+                "99.9999" : 8.783092741652158,
+                "100.0" : 8.783092741652158
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    8.703203359049688,
+                    8.55175139868645,
+                    8.783092741652158
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10000InMem",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 16.050061197314516,
+            "scoreError" : 3.1168472980340263,
+            "scoreConfidence" : [
+                12.93321389928049,
+                19.166908495348544
+            ],
+            "scorePercentiles" : {
+                "0.0" : 15.858636117647292,
+                "50.0" : 16.10447827647979,
+                "90.0" : 16.18706919781646,
+                "95.0" : 16.18706919781646,
+                "99.0" : 16.18706919781646,
+                "99.9" : 16.18706919781646,
+                "99.99" : 16.18706919781646,
+                "99.999" : 16.18706919781646,
+                "99.9999" : 16.18706919781646,
+                "100.0" : 16.18706919781646
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    16.18706919781646,
+                    16.10447827647979,
+                    15.858636117647292
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1000InFile",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 110.3543470329126,
+            "scoreError" : 34.964874537421046,
+            "scoreConfidence" : [
+                75.38947249549156,
+                145.31922157033364
+            ],
+            "scorePercentiles" : {
+                "0.0" : 108.71488138712282,
+                "50.0" : 109.88673746276473,
+                "90.0" : 112.46142224885025,
+                "95.0" : 112.46142224885025,
+                "99.0" : 112.46142224885025,
+                "99.9" : 112.46142224885025,
+                "99.99" : 112.46142224885025,
+                "99.999" : 112.46142224885025,
+                "99.9999" : 112.46142224885025,
+                "100.0" : 112.46142224885025
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    109.88673746276473,
+                    108.71488138712282,
+                    112.46142224885025
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1000InMem",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 169.30626315380644,
+            "scoreError" : 18.554752183333683,
+            "scoreConfidence" : [
+                150.75151097047276,
+                187.86101533714012
+            ],
+            "scorePercentiles" : {
+                "0.0" : 168.297358528145,
+                "50.0" : 169.29016633256754,
+                "90.0" : 170.33126460070687,
+                "95.0" : 170.33126460070687,
+                "99.0" : 170.33126460070687,
+                "99.9" : 170.33126460070687,
+                "99.99" : 170.33126460070687,
+                "99.999" : 170.33126460070687,
+                "99.9999" : 170.33126460070687,
+                "100.0" : 170.33126460070687
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    168.297358528145,
+                    169.29016633256754,
+                    170.33126460070687
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100InFile",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 823.8777508069207,
+            "scoreError" : 79.66149773323721,
+            "scoreConfidence" : [
+                744.2162530736836,
+                903.5392485401579
+            ],
+            "scorePercentiles" : {
+                "0.0" : 820.1265423405257,
+                "50.0" : 822.8356875021844,
+                "90.0" : 828.6710225780522,
+                "95.0" : 828.6710225780522,
+                "99.0" : 828.6710225780522,
+                "99.9" : 828.6710225780522,
+                "99.99" : 828.6710225780522,
+                "99.999" : 828.6710225780522,
+                "99.9999" : 828.6710225780522,
+                "100.0" : 828.6710225780522
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    822.8356875021844,
+                    828.6710225780522,
+                    820.1265423405257
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100InMem",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1695.0004143841552,
+            "scoreError" : 380.20467035524393,
+            "scoreConfidence" : [
+                1314.7957440289113,
+                2075.2050847393994
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1671.3053034027416,
+                "50.0" : 1703.2114290262248,
+                "90.0" : 1710.484510723499,
+                "95.0" : 1710.484510723499,
+                "99.0" : 1710.484510723499,
+                "99.9" : 1710.484510723499,
+                "99.99" : 1710.484510723499,
+                "99.999" : 1710.484510723499,
+                "99.9999" : 1710.484510723499,
+                "100.0" : 1710.484510723499
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1710.484510723499,
+                    1703.2114290262248,
+                    1671.3053034027416
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10InFile",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1944.505148277826,
+            "scoreError" : 4145.753347989497,
+            "scoreConfidence" : [
+                -2201.248199711671,
+                6090.258496267324
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1791.1926865792416,
+                "50.0" : 1836.7414093450452,
+                "90.0" : 2205.5813489091906,
+                "95.0" : 2205.5813489091906,
+                "99.0" : 2205.5813489091906,
+                "99.9" : 2205.5813489091906,
+                "99.99" : 2205.5813489091906,
+                "99.999" : 2205.5813489091906,
+                "99.9999" : 2205.5813489091906,
+                "100.0" : 2205.5813489091906
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2205.5813489091906,
+                    1836.7414093450452,
+                    1791.1926865792416
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10InMem",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 17128.387270664174,
+            "scoreError" : 1428.463039335734,
+            "scoreConfidence" : [
+                15699.92423132844,
+                18556.850309999907
+            ],
+            "scorePercentiles" : {
+                "0.0" : 17072.969307658706,
+                "50.0" : 17094.23065967159,
+                "90.0" : 17217.961844662223,
+                "95.0" : 17217.961844662223,
+                "99.0" : 17217.961844662223,
+                "99.9" : 17217.961844662223,
+                "99.99" : 17217.961844662223,
+                "99.999" : 17217.961844662223,
+                "99.9999" : 17217.961844662223,
+                "100.0" : 17217.961844662223
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    17217.961844662223,
+                    17094.23065967159,
+                    17072.969307658706
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1InFile",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1964.7979981377782,
+            "scoreError" : 2931.590046094275,
+            "scoreConfidence" : [
+                -966.7920479564966,
+                4896.388044232053
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1814.5191524246075,
+                "50.0" : 1945.684635284012,
+                "90.0" : 2134.1902067047145,
+                "95.0" : 2134.1902067047145,
+                "99.0" : 2134.1902067047145,
+                "99.9" : 2134.1902067047145,
+                "99.99" : 2134.1902067047145,
+                "99.999" : 2134.1902067047145,
+                "99.9999" : 2134.1902067047145,
+                "100.0" : 2134.1902067047145
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1945.684635284012,
+                    2134.1902067047145,
+                    1814.5191524246075
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1InMem",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 178319.7912798864,
+            "scoreError" : 68440.91579474122,
+            "scoreConfidence" : [
+                109878.8754851452,
+                246760.70707462763
+            ],
+            "scorePercentiles" : {
+                "0.0" : 176109.48496169643,
+                "50.0" : 176198.56981648036,
+                "90.0" : 182651.31906148244,
+                "95.0" : 182651.31906148244,
+                "99.0" : 182651.31906148244,
+                "99.9" : 182651.31906148244,
+                "99.99" : 182651.31906148244,
+                "99.999" : 182651.31906148244,
+                "99.9999" : 182651.31906148244,
+                "100.0" : 182651.31906148244
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    176198.56981648036,
+                    176109.48496169643,
+                    182651.31906148244
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 13.46161939526631,
+            "scoreError" : 1.5890382844200572,
+            "scoreConfidence" : [
+                11.872581110846252,
+                15.050657679686367
+            ],
+            "scorePercentiles" : {
+                "0.0" : 13.408317754145086,
+                "50.0" : 13.414407456877472,
+                "90.0" : 13.56213297477637,
+                "95.0" : 13.56213297477637,
+                "99.0" : 13.56213297477637,
+                "99.9" : 13.56213297477637,
+                "99.99" : 13.56213297477637,
+                "99.999" : 13.56213297477637,
+                "99.9999" : 13.56213297477637,
+                "100.0" : 13.56213297477637
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    13.414407456877472,
+                    13.56213297477637,
+                    13.408317754145086
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kBytesUTF16",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 8.331223967130207,
+            "scoreError" : 0.825277778350642,
+            "scoreConfidence" : [
+                7.505946188779564,
+                9.156501745480849
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8.287269924668717,
+                "50.0" : 8.328760227023496,
+                "90.0" : 8.377641749698405,
+                "95.0" : 8.377641749698405,
+                "99.0" : 8.377641749698405,
+                "99.9" : 8.377641749698405,
+                "99.99" : 8.377641749698405,
+                "99.999" : 8.377641749698405,
+                "99.9999" : 8.377641749698405,
+                "100.0" : 8.377641749698405
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    8.287269924668717,
+                    8.328760227023496,
+                    8.377641749698405
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 18.693163379463286,
+            "scoreError" : 6.297682723374349,
+            "scoreConfidence" : [
+                12.395480656088937,
+                24.990846102837637
+            ],
+            "scorePercentiles" : {
+                "0.0" : 18.310552757039204,
+                "50.0" : 18.787680423533647,
+                "90.0" : 18.981256957817003,
+                "95.0" : 18.981256957817003,
+                "99.0" : 18.981256957817003,
+                "99.9" : 18.981256957817003,
+                "99.99" : 18.981256957817003,
+                "99.999" : 18.981256957817003,
+                "99.9999" : 18.981256957817003,
+                "100.0" : 18.981256957817003
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    18.787680423533647,
+                    18.981256957817003,
+                    18.310552757039204
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kCharsUTF16",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 18.41391919116749,
+            "scoreError" : 4.681075372874227,
+            "scoreConfidence" : [
+                13.732843818293263,
+                23.09499456404172
+            ],
+            "scorePercentiles" : {
+                "0.0" : 18.253469600287445,
+                "50.0" : 18.27844029106973,
+                "90.0" : 18.70984768214529,
+                "95.0" : 18.70984768214529,
+                "99.0" : 18.70984768214529,
+                "99.9" : 18.70984768214529,
+                "99.99" : 18.70984768214529,
+                "99.999" : 18.70984768214529,
+                "99.9999" : 18.70984768214529,
+                "100.0" : 18.70984768214529
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    18.70984768214529,
+                    18.253469600287445,
+                    18.27844029106973
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 138.3929066468121,
+            "scoreError" : 12.922473274923215,
+            "scoreConfidence" : [
+                125.47043337188887,
+                151.3153799217353
+            ],
+            "scorePercentiles" : {
+                "0.0" : 137.64979317871004,
+                "50.0" : 138.46855767564088,
+                "90.0" : 139.06036908608533,
+                "95.0" : 139.06036908608533,
+                "99.0" : 139.06036908608533,
+                "99.9" : 139.06036908608533,
+                "99.99" : 139.06036908608533,
+                "99.999" : 139.06036908608533,
+                "99.9999" : 139.06036908608533,
+                "100.0" : 139.06036908608533
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    137.64979317871004,
+                    139.06036908608533,
+                    138.46855767564088
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kBytesUTF16",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 85.5751894053878,
+            "scoreError" : 15.948791431471456,
+            "scoreConfidence" : [
+                69.62639797391634,
+                101.52398083685927
+            ],
+            "scorePercentiles" : {
+                "0.0" : 84.67290855425492,
+                "50.0" : 85.63434136238263,
+                "90.0" : 86.4183182995259,
+                "95.0" : 86.4183182995259,
+                "99.0" : 86.4183182995259,
+                "99.9" : 86.4183182995259,
+                "99.99" : 86.4183182995259,
+                "99.999" : 86.4183182995259,
+                "99.9999" : 86.4183182995259,
+                "100.0" : 86.4183182995259
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    84.67290855425492,
+                    86.4183182995259,
+                    85.63434136238263
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 187.72020225161498,
+            "scoreError" : 51.29208864491039,
+            "scoreConfidence" : [
+                136.42811360670458,
+                239.01229089652537
+            ],
+            "scorePercentiles" : {
+                "0.0" : 184.8070703608209,
+                "50.0" : 187.9359068951596,
+                "90.0" : 190.41762949886444,
+                "95.0" : 190.41762949886444,
+                "99.0" : 190.41762949886444,
+                "99.9" : 190.41762949886444,
+                "99.99" : 190.41762949886444,
+                "99.999" : 190.41762949886444,
+                "99.9999" : 190.41762949886444,
+                "100.0" : 190.41762949886444
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    187.9359068951596,
+                    190.41762949886444,
+                    184.8070703608209
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kCharsUTF16",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 187.0868064587299,
+            "scoreError" : 28.602483039383305,
+            "scoreConfidence" : [
+                158.4843234193466,
+                215.68928949811323
+            ],
+            "scorePercentiles" : {
+                "0.0" : 185.76667705362064,
+                "50.0" : 186.67405419306664,
+                "90.0" : 188.81968812950248,
+                "95.0" : 188.81968812950248,
+                "99.0" : 188.81968812950248,
+                "99.9" : 188.81968812950248,
+                "99.99" : 188.81968812950248,
+                "99.999" : 188.81968812950248,
+                "99.9999" : 188.81968812950248,
+                "100.0" : 188.81968812950248
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    188.81968812950248,
+                    185.76667705362064,
+                    186.67405419306664
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly100kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1421.5922473432513,
+            "scoreError" : 101.36171716122169,
+            "scoreConfidence" : [
+                1320.2305301820297,
+                1522.9539645044729
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1417.059072775677,
+                "50.0" : 1419.9273419099466,
+                "90.0" : 1427.7903273441304,
+                "95.0" : 1427.7903273441304,
+                "99.0" : 1427.7903273441304,
+                "99.9" : 1427.7903273441304,
+                "99.99" : 1427.7903273441304,
+                "99.999" : 1427.7903273441304,
+                "99.9999" : 1427.7903273441304,
+                "100.0" : 1427.7903273441304
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1417.059072775677,
+                    1427.7903273441304,
+                    1419.9273419099466
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly100kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1921.6692235314467,
+            "scoreError" : 222.01069065948528,
+            "scoreConfidence" : [
+                1699.6585328719614,
+                2143.679914190932
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1911.7698308780698,
+                "50.0" : 1917.9823780394997,
+                "90.0" : 1935.2554616767707,
+                "95.0" : 1935.2554616767707,
+                "99.0" : 1935.2554616767707,
+                "99.9" : 1935.2554616767707,
+                "99.99" : 1935.2554616767707,
+                "99.999" : 1935.2554616767707,
+                "99.9999" : 1935.2554616767707,
+                "100.0" : 1935.2554616767707
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1911.7698308780698,
+                    1917.9823780394997,
+                    1935.2554616767707
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 14234.13808341262,
+            "scoreError" : 1491.4112558040897,
+            "scoreConfidence" : [
+                12742.72682760853,
+                15725.549339216708
+            ],
+            "scorePercentiles" : {
+                "0.0" : 14142.919920561293,
+                "50.0" : 14258.71432330917,
+                "90.0" : 14300.780006367399,
+                "95.0" : 14300.780006367399,
+                "99.0" : 14300.780006367399,
+                "99.9" : 14300.780006367399,
+                "99.99" : 14300.780006367399,
+                "99.999" : 14300.780006367399,
+                "99.9999" : 14300.780006367399,
+                "100.0" : 14300.780006367399
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    14300.780006367399,
+                    14142.919920561293,
+                    14258.71432330917
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 19844.462572849054,
+            "scoreError" : 5291.195376490076,
+            "scoreConfidence" : [
+                14553.267196358978,
+                25135.65794933913
+            ],
+            "scorePercentiles" : {
+                "0.0" : 19577.13312590277,
+                "50.0" : 19803.434353728244,
+                "90.0" : 20152.82023891615,
+                "95.0" : 20152.82023891615,
+                "99.0" : 20152.82023891615,
+                "99.9" : 20152.82023891615,
+                "99.99" : 20152.82023891615,
+                "99.999" : 20152.82023891615,
+                "99.9999" : 20152.82023891615,
+                "100.0" : 20152.82023891615
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    20152.82023891615,
+                    19803.434353728244,
+                    19577.13312590277
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 123494.23423870558,
+            "scoreError" : 26799.97864864898,
+            "scoreConfidence" : [
+                96694.25559005661,
+                150294.21288735457
+            ],
+            "scorePercentiles" : {
+                "0.0" : 121824.96725537222,
+                "50.0" : 124067.8816001942,
+                "90.0" : 124589.85386055031,
+                "95.0" : 124589.85386055031,
+                "99.0" : 124589.85386055031,
+                "99.9" : 124589.85386055031,
+                "99.99" : 124589.85386055031,
+                "99.999" : 124589.85386055031,
+                "99.9999" : 124589.85386055031,
+                "100.0" : 124589.85386055031
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    121824.96725537222,
+                    124067.8816001942,
+                    124589.85386055031
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1kChars",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 194563.5698646718,
+            "scoreError" : 82526.60358898618,
+            "scoreConfidence" : [
+                112036.96627568561,
+                277090.173453658
+            ],
+            "scorePercentiles" : {
+                "0.0" : 189734.51751752853,
+                "50.0" : 195253.91514067355,
+                "90.0" : 198702.27693581337,
+                "95.0" : 198702.27693581337,
+                "99.0" : 198702.27693581337,
+                "99.9" : 198702.27693581337,
+                "99.99" : 198702.27693581337,
+                "99.999" : 198702.27693581337,
+                "99.9999" : 198702.27693581337,
+                "100.0" : 198702.27693581337
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    189734.51751752853,
+                    198702.27693581337,
+                    195253.91514067355
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly50000kBytes",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 2.7674625490926026,
+            "scoreError" : 0.21005382649172002,
+            "scoreConfidence" : [
+                2.5574087226008824,
+                2.977516375584323
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2.757710328268645,
+                "50.0" : 2.7645132337248497,
+                "90.0" : 2.7801640852843135,
+                "95.0" : 2.7801640852843135,
+                "99.0" : 2.7801640852843135,
+                "99.9" : 2.7801640852843135,
+                "99.99" : 2.7801640852843135,
+                "99.999" : 2.7801640852843135,
+                "99.9999" : 2.7801640852843135,
+                "100.0" : 2.7801640852843135
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2.7801640852843135,
+                    2.7645132337248497,
+                    2.757710328268645
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly50000kBytesUTF16",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1.7116149531442328,
+            "scoreError" : 0.22852906026449896,
+            "scoreConfidence" : [
+                1.483085892879734,
+                1.9401440134087318
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1.7028044337621846,
+                "50.0" : 1.7060857785807755,
+                "90.0" : 1.7259546470897384,
+                "95.0" : 1.7259546470897384,
+                "99.0" : 1.7259546470897384,
+                "99.9" : 1.7259546470897384,
+                "99.99" : 1.7259546470897384,
+                "99.999" : 1.7259546470897384,
+                "99.9999" : 1.7259546470897384,
+                "100.0" : 1.7259546470897384
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1.7028044337621846,
+                    1.7060857785807755,
+                    1.7259546470897384
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedBytes500",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 280.60156729272353,
+            "scoreError" : 82.83568463525961,
+            "scoreConfidence" : [
+                197.76588265746392,
+                363.43725192798314
+            ],
+            "scorePercentiles" : {
+                "0.0" : 275.41334372678995,
+                "50.0" : 282.5415206702999,
+                "90.0" : 283.84983748108084,
+                "95.0" : 283.84983748108084,
+                "99.0" : 283.84983748108084,
+                "99.9" : 283.84983748108084,
+                "99.99" : 283.84983748108084,
+                "99.999" : 283.84983748108084,
+                "99.9999" : 283.84983748108084,
+                "100.0" : 283.84983748108084
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    283.84983748108084,
+                    282.5415206702999,
+                    275.41334372678995
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedBytes500FileInput",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 256.5641995302819,
+            "scoreError" : 22.109216615270295,
+            "scoreConfidence" : [
+                234.45498291501158,
+                278.67341614555215
+            ],
+            "scorePercentiles" : {
+                "0.0" : 255.52064327321943,
+                "50.0" : 256.2785758090974,
+                "90.0" : 257.8933795085289,
+                "95.0" : 257.8933795085289,
+                "99.0" : 257.8933795085289,
+                "99.9" : 257.8933795085289,
+                "99.99" : 257.8933795085289,
+                "99.999" : 257.8933795085289,
+                "99.9999" : 257.8933795085289,
+                "100.0" : 257.8933795085289
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    255.52064327321943,
+                    256.2785758090974,
+                    257.8933795085289
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars200",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 994.3666122239265,
+            "scoreError" : 292.5828197922864,
+            "scoreConfidence" : [
+                701.7837924316401,
+                1286.949432016213
+            ],
+            "scorePercentiles" : {
+                "0.0" : 975.850202004983,
+                "50.0" : 1003.3865544204918,
+                "90.0" : 1003.863080246305,
+                "95.0" : 1003.863080246305,
+                "99.0" : 1003.863080246305,
+                "99.9" : 1003.863080246305,
+                "99.99" : 1003.863080246305,
+                "99.999" : 1003.863080246305,
+                "99.9999" : 1003.863080246305,
+                "100.0" : 1003.863080246305
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1003.863080246305,
+                    1003.3865544204918,
+                    975.850202004983
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars500",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 397.75233485610926,
+            "scoreError" : 117.39861476860519,
+            "scoreConfidence" : [
+                280.3537200875041,
+                515.1509496247145
+            ],
+            "scorePercentiles" : {
+                "0.0" : 390.56530082018713,
+                "50.0" : 399.7120482358977,
+                "90.0" : 402.979655512243,
+                "95.0" : 402.979655512243,
+                "99.0" : 402.979655512243,
+                "99.9" : 402.979655512243,
+                "99.99" : 402.979655512243,
+                "99.999" : 402.979655512243,
+                "99.9999" : 402.979655512243,
+                "100.0" : 402.979655512243
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    399.7120482358977,
+                    402.979655512243,
+                    390.56530082018713
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars5000",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 38.45637719801283,
+            "scoreError" : 3.4788945618934988,
+            "scoreConfidence" : [
+                34.97748263611933,
+                41.93527175990633
+            ],
+            "scorePercentiles" : {
+                "0.0" : 38.337339093764285,
+                "50.0" : 38.355474604741914,
+                "90.0" : 38.67631789553229,
+                "95.0" : 38.67631789553229,
+                "99.0" : 38.67631789553229,
+                "99.9" : 38.67631789553229,
+                "99.99" : 38.67631789553229,
+                "99.999" : 38.67631789553229,
+                "99.9999" : 38.67631789553229,
+                "100.0" : 38.67631789553229
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    38.355474604741914,
+                    38.67631789553229,
+                    38.337339093764285
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars50000",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 3.7741072668599434,
+            "scoreError" : 1.14353911785309,
+            "scoreConfidence" : [
+                2.6305681490068533,
+                4.917646384713033
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.7036968450058425,
+                "50.0" : 3.794796385456443,
+                "90.0" : 3.8238285701175445,
+                "95.0" : 3.8238285701175445,
+                "99.0" : 3.8238285701175445,
+                "99.9" : 3.8238285701175445,
+                "99.99" : 3.8238285701175445,
+                "99.999" : 3.8238285701175445,
+                "99.9999" : 3.8238285701175445,
+                "100.0" : 3.8238285701175445
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3.8238285701175445,
+                    3.794796385456443,
+                    3.7036968450058425
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly10000kIM",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 32.087463151631816,
+            "scoreError" : 2.4791627650242165,
+            "scoreConfidence" : [
+                29.6083003866076,
+                34.56662591665603
+            ],
+            "scorePercentiles" : {
+                "0.0" : 31.961444812270095,
+                "50.0" : 32.06950336000933,
+                "90.0" : 32.23144128261602,
+                "95.0" : 32.23144128261602,
+                "99.0" : 32.23144128261602,
+                "99.9" : 32.23144128261602,
+                "99.99" : 32.23144128261602,
+                "99.999" : 32.23144128261602,
+                "99.9999" : 32.23144128261602,
+                "100.0" : 32.23144128261602
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    32.23144128261602,
+                    31.961444812270095,
+                    32.06950336000933
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly1000kIM",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 319.784415682392,
+            "scoreError" : 57.029997890916135,
+            "scoreConfidence" : [
+                262.7544177914759,
+                376.8144135733082
+            ],
+            "scorePercentiles" : {
+                "0.0" : 316.1791987999154,
+                "50.0" : 321.4329922017561,
+                "90.0" : 321.74105604550454,
+                "95.0" : 321.74105604550454,
+                "99.0" : 321.74105604550454,
+                "99.9" : 321.74105604550454,
+                "99.99" : 321.74105604550454,
+                "99.999" : 321.74105604550454,
+                "99.9999" : 321.74105604550454,
+                "100.0" : 321.74105604550454
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    321.74105604550454,
+                    321.4329922017561,
+                    316.1791987999154
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly100kIM",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 3424.2084594962394,
+            "scoreError" : 2121.6420816013633,
+            "scoreConfidence" : [
+                1302.566377894876,
+                5545.850541097603
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3303.470886605746,
+                "50.0" : 3433.6733421452977,
+                "90.0" : 3535.481149737674,
+                "95.0" : 3535.481149737674,
+                "99.0" : 3535.481149737674,
+                "99.9" : 3535.481149737674,
+                "99.99" : 3535.481149737674,
+                "99.999" : 3535.481149737674,
+                "99.9999" : 3535.481149737674,
+                "100.0" : 3535.481149737674
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3433.6733421452977,
+                    3303.470886605746,
+                    3535.481149737674
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly10kIM",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 33048.505080486124,
+            "scoreError" : 2287.4912702766355,
+            "scoreConfidence" : [
+                30761.01381020949,
+                35335.99635076276
+            ],
+            "scorePercentiles" : {
+                "0.0" : 32911.175748842936,
+                "50.0" : 33077.45931762718,
+                "90.0" : 33156.88017498826,
+                "95.0" : 33156.88017498826,
+                "99.0" : 33156.88017498826,
+                "99.9" : 33156.88017498826,
+                "99.99" : 33156.88017498826,
+                "99.999" : 33156.88017498826,
+                "99.9999" : 33156.88017498826,
+                "100.0" : 33156.88017498826
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    32911.175748842936,
+                    33077.45931762718,
+                    33156.88017498826
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly1kIM",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 343477.6946855262,
+            "scoreError" : 68505.87704333752,
+            "scoreConfidence" : [
+                274971.8176421887,
+                411983.5717288637
+            ],
+            "scorePercentiles" : {
+                "0.0" : 339154.94702311564,
+                "50.0" : 345346.3194847995,
+                "90.0" : 345931.81754866336,
+                "95.0" : 345931.81754866336,
+                "99.0" : 345931.81754866336,
+                "99.9" : 345931.81754866336,
+                "99.99" : 345931.81754866336,
+                "99.999" : 345931.81754866336,
+                "99.9999" : 345931.81754866336,
+                "100.0" : 345931.81754866336
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    345931.81754866336,
+                    345346.3194847995,
+                    339154.94702311564
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM200",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 1672.6472479204992,
+            "scoreError" : 431.3685525646019,
+            "scoreConfidence" : [
+                1241.2786953558973,
+                2104.015800485101
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1646.108621194248,
+                "50.0" : 1680.3622003270973,
+                "90.0" : 1691.470922240153,
+                "95.0" : 1691.470922240153,
+                "99.0" : 1691.470922240153,
+                "99.9" : 1691.470922240153,
+                "99.99" : 1691.470922240153,
+                "99.999" : 1691.470922240153,
+                "99.9999" : 1691.470922240153,
+                "100.0" : 1691.470922240153
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1646.108621194248,
+                    1680.3622003270973,
+                    1691.470922240153
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM500",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 684.2862907056638,
+            "scoreError" : 169.24499602420025,
+            "scoreConfidence" : [
+                515.0412946814636,
+                853.531286729864
+            ],
+            "scorePercentiles" : {
+                "0.0" : 673.9345095404166,
+                "50.0" : 687.0765690911416,
+                "90.0" : 691.8477934854332,
+                "95.0" : 691.8477934854332,
+                "99.0" : 691.8477934854332,
+                "99.9" : 691.8477934854332,
+                "99.99" : 691.8477934854332,
+                "99.999" : 691.8477934854332,
+                "99.9999" : 691.8477934854332,
+                "100.0" : 691.8477934854332
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    687.0765690911416,
+                    673.9345095404166,
+                    691.8477934854332
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM5000",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 61.982445912426535,
+            "scoreError" : 20.650298796234807,
+            "scoreConfidence" : [
+                41.33214711619173,
+                82.63274470866133
+            ],
+            "scorePercentiles" : {
+                "0.0" : 60.72697153597426,
+                "50.0" : 62.29543858955216,
+                "90.0" : 62.9249276117532,
+                "95.0" : 62.9249276117532,
+                "99.0" : 62.9249276117532,
+                "99.9" : 62.9249276117532,
+                "99.99" : 62.9249276117532,
+                "99.999" : 62.9249276117532,
+                "99.9999" : 62.9249276117532,
+                "100.0" : 62.9249276117532
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    62.9249276117532,
+                    60.72697153597426,
+                    62.29543858955216
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM50000",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "1 s",
+        "primaryMetric" : {
+            "score" : 5.631560916242305,
+            "scoreError" : 1.3846447731372045,
+            "scoreConfidence" : [
+                4.2469161431051,
+                7.016205689379509
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5.544015789356968,
+                "50.0" : 5.671833391784728,
+                "90.0" : 5.678833567585218,
+                "95.0" : 5.678833567585218,
+                "99.0" : 5.678833567585218,
+                "99.9" : 5.678833567585218,
+                "99.99" : 5.678833567585218,
+                "99.999" : 5.678833567585218,
+                "99.9999" : 5.678833567585218,
+                "100.0" : 5.678833567585218
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    5.678833567585218,
+                    5.544015789356968,
+                    5.671833391784728
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

@@ -1,0 +1,2173 @@
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62163]
+# Run progress: 0,00% complete, ETA 00:07:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,777 ops/s
+# Warmup Iteration   2: 4,104 ops/s
+# Warmup Iteration   3: 4,562 ops/s
+Iteration   1: 4,479 ops/s
+Iteration   2: 4,213 ops/s
+Iteration   3: 3,895 ops/s
+
+
+Result: 4,196 ±(99.9%) 5,331 ops/s [Average]
+  Statistics: (min, avg, max) = (3,895, 4,196, 4,479), stdev = 0,292
+  Confidence interval (99.9%): [-1,135, 9,527]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kBytesUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62167]
+# Run progress: 1,39% complete, ETA 00:08:32
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:822)
+	at com.google.gson.Gson.fromJson(Gson.java:748)
+	at de.saly.json.jsr353.benchmark.gson.GsonParser.readToStructure(GsonParser.java:73)
+	at de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kBytesUTF16(BenchmarkJsonReader.java:78)
+	at de.saly.json.jsr353.benchmark.jmh.objectmodelapi.generated.BenchmarkJsonReader_read10000kBytesUTF16.read10000kBytesUTF16_thrpt_jmhStub(BenchmarkJsonReader_read10000kBytesUTF16.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.objectmodelapi.generated.BenchmarkJsonReader_read10000kBytesUTF16.read10000kBytesUTF16_Throughput(BenchmarkJsonReader_read10000kBytesUTF16.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:387)
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:183)
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145)
+	at com.google.gson.Gson.fromJson(Gson.java:810)
+	... 15 more
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62170]
+# Run progress: 2,78% complete, ETA 00:04:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,790 ops/s
+# Warmup Iteration   2: 4,369 ops/s
+# Warmup Iteration   3: 3,066 ops/s
+Iteration   1: 5,206 ops/s
+Iteration   2: 4,964 ops/s
+Iteration   3: 5,182 ops/s
+
+
+Result: 5,117 ±(99.9%) 2,428 ops/s [Average]
+  Statistics: (min, avg, max) = (4,964, 5,117, 5,206), stdev = 0,133
+  Confidence interval (99.9%): [2,689, 7,545]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10000kCharsUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62173]
+# Run progress: 4,17% complete, ETA 00:06:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,775 ops/s
+# Warmup Iteration   2: 4,407 ops/s
+# Warmup Iteration   3: 5,408 ops/s
+Iteration   1: 5,182 ops/s
+Iteration   2: 5,257 ops/s
+Iteration   3: 5,272 ops/s
+
+
+Result: 5,237 ±(99.9%) 0,879 ops/s [Average]
+  Statistics: (min, avg, max) = (5,182, 5,237, 5,272), stdev = 0,048
+  Confidence interval (99.9%): [4,358, 6,116]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62183]
+# Run progress: 5,56% complete, ETA 00:06:31
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,905 ops/s
+# Warmup Iteration   2: 50,285 ops/s
+# Warmup Iteration   3: 53,303 ops/s
+Iteration   1: 55,658 ops/s
+Iteration   2: 55,518 ops/s
+Iteration   3: 55,672 ops/s
+
+
+Result: 55,616 ±(99.9%) 1,556 ops/s [Average]
+  Statistics: (min, avg, max) = (55,518, 55,616, 55,672), stdev = 0,085
+  Confidence interval (99.9%): [54,060, 57,172]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kBytesUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62185]
+# Run progress: 6,94% complete, ETA 00:06:34
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:822)
+	at com.google.gson.Gson.fromJson(Gson.java:748)
+	at de.saly.json.jsr353.benchmark.gson.GsonParser.readToStructure(GsonParser.java:73)
+	at de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kBytesUTF16(BenchmarkJsonReader.java:68)
+	at de.saly.json.jsr353.benchmark.jmh.objectmodelapi.generated.BenchmarkJsonReader_read1000kBytesUTF16.read1000kBytesUTF16_thrpt_jmhStub(BenchmarkJsonReader_read1000kBytesUTF16.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.objectmodelapi.generated.BenchmarkJsonReader_read1000kBytesUTF16.read1000kBytesUTF16_Throughput(BenchmarkJsonReader_read1000kBytesUTF16.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:387)
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:183)
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145)
+	at com.google.gson.Gson.fromJson(Gson.java:810)
+	... 15 more
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62187]
+# Run progress: 8,33% complete, ETA 00:05:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,909 ops/s
+# Warmup Iteration   2: 54,282 ops/s
+# Warmup Iteration   3: 58,412 ops/s
+Iteration   1: 60,017 ops/s
+Iteration   2: 60,009 ops/s
+Iteration   3: 58,914 ops/s
+
+
+Result: 59,647 ±(99.9%) 11,578 ops/s [Average]
+  Statistics: (min, avg, max) = (58,914, 59,647, 60,017), stdev = 0,635
+  Confidence interval (99.9%): [48,069, 71,224]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1000kCharsUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62189]
+# Run progress: 9,72% complete, ETA 00:05:44
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,900 ops/s
+# Warmup Iteration   2: 55,091 ops/s
+# Warmup Iteration   3: 58,899 ops/s
+Iteration   1: 59,975 ops/s
+Iteration   2: 60,260 ops/s
+Iteration   3: 60,467 ops/s
+
+
+Result: 60,234 ±(99.9%) 4,501 ops/s [Average]
+  Statistics: (min, avg, max) = (59,975, 60,234, 60,467), stdev = 0,247
+  Confidence interval (99.9%): [55,733, 64,735]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read100kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62192]
+# Run progress: 11,11% complete, ETA 00:05:48
+# Fork: 1 of 1
+# Warmup Iteration   1: 8,220 ops/s
+# Warmup Iteration   2: 524,772 ops/s
+# Warmup Iteration   3: 565,622 ops/s
+Iteration   1: 580,400 ops/s
+Iteration   2: 580,441 ops/s
+Iteration   3: 584,005 ops/s
+
+
+Result: 581,615 ±(99.9%) 37,757 ops/s [Average]
+  Statistics: (min, avg, max) = (580,400, 581,615, 584,005), stdev = 2,070
+  Confidence interval (99.9%): [543,858, 619,373]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read100kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62195]
+# Run progress: 12,50% complete, ETA 00:05:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 8,159 ops/s
+# Warmup Iteration   2: 598,326 ops/s
+# Warmup Iteration   3: 633,471 ops/s
+Iteration   1: 644,144 ops/s
+Iteration   2: 652,385 ops/s
+Iteration   3: 650,441 ops/s
+
+
+Result: 648,990 ±(99.9%) 78,589 ops/s [Average]
+  Statistics: (min, avg, max) = (644,144, 648,990, 652,385), stdev = 4,308
+  Confidence interval (99.9%): [570,401, 727,579]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62197]
+# Run progress: 13,89% complete, ETA 00:05:49
+# Fork: 1 of 1
+# Warmup Iteration   1: 79,285 ops/s
+# Warmup Iteration   2: 5557,099 ops/s
+# Warmup Iteration   3: 6142,241 ops/s
+Iteration   1: 6510,901 ops/s
+Iteration   2: 6503,818 ops/s
+Iteration   3: 6518,970 ops/s
+
+
+Result: 6511,230 ±(99.9%) 138,316 ops/s [Average]
+  Statistics: (min, avg, max) = (6503,818, 6511,230, 6518,970), stdev = 7,582
+  Confidence interval (99.9%): [6372,913, 6649,546]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read10kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62199]
+# Run progress: 15,28% complete, ETA 00:05:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 84,225 ops/s
+# Warmup Iteration   2: 6438,614 ops/s
+# Warmup Iteration   3: 6886,370 ops/s
+Iteration   1: 7108,195 ops/s
+Iteration   2: 7210,335 ops/s
+Iteration   3: 7167,936 ops/s
+
+
+Result: 7162,155 ±(99.9%) 936,174 ops/s [Average]
+  Statistics: (min, avg, max) = (7108,195, 7162,155, 7210,335), stdev = 51,315
+  Confidence interval (99.9%): [6225,981, 8098,330]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62202]
+# Run progress: 16,67% complete, ETA 00:05:45
+# Fork: 1 of 1
+# Warmup Iteration   1: 492,463 ops/s
+# Warmup Iteration   2: 52611,007 ops/s
+# Warmup Iteration   3: 60775,290 ops/s
+Iteration   1: 62069,069 ops/s
+Iteration   2: 63068,483 ops/s
+Iteration   3: 63652,310 ops/s
+
+
+Result: 62929,954 ±(99.9%) 14607,011 ops/s [Average]
+  Statistics: (min, avg, max) = (62069,069, 62929,954, 63652,310), stdev = 800,660
+  Confidence interval (99.9%): [48322,943, 77536,965]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.read1kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62205]
+# Run progress: 18,06% complete, ETA 00:05:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 715,152 ops/s
+# Warmup Iteration   2: 64396,427 ops/s
+# Warmup Iteration   3: 69719,537 ops/s
+Iteration   1: 73806,913 ops/s
+Iteration   2: 72529,652 ops/s
+Iteration   3: 73921,506 ops/s
+
+
+Result: 73419,357 ±(99.9%) 14095,729 ops/s [Average]
+  Statistics: (min, avg, max) = (72529,652, 73419,357, 73921,506), stdev = 772,634
+  Confidence interval (99.9%): [59323,628, 87515,086]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedBytes500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62208]
+# Run progress: 19,44% complete, ETA 00:05:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,850 ops/s
+# Warmup Iteration   2: 105,922 ops/s
+# Warmup Iteration   3: 113,449 ops/s
+Iteration   1: 111,966 ops/s
+Iteration   2: 117,300 ops/s
+Iteration   3: 112,366 ops/s
+
+
+Result: 113,877 ±(99.9%) 54,197 ops/s [Average]
+  Statistics: (min, avg, max) = (111,966, 113,877, 117,300), stdev = 2,971
+  Confidence interval (99.9%): [59,680, 168,074]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedBytes5000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62210]
+# Run progress: 20,83% complete, ETA 00:05:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,850 ops/s
+# Warmup Iteration   2: 10,043 ops/s
+# Warmup Iteration   3: 10,770 ops/s
+Iteration   1: 11,000 ops/s
+Iteration   2: 10,922 ops/s
+Iteration   3: 10,953 ops/s
+
+
+Result: 10,958 ±(99.9%) 0,717 ops/s [Average]
+  Statistics: (min, avg, max) = (10,922, 10,958, 11,000), stdev = 0,039
+  Confidence interval (99.9%): [10,241, 11,675]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedBytes50000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62212]
+# Run progress: 22,22% complete, ETA 00:05:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,443 ops/s
+# Warmup Iteration   2: 0,925 ops/s
+# Warmup Iteration   3: 0,950 ops/s
+Iteration   1: 0,963 ops/s
+Iteration   2: 0,894 ops/s
+Iteration   3: 0,725 ops/s
+
+
+Result: 0,861 ±(99.9%) 2,231 ops/s [Average]
+  Statistics: (min, avg, max) = (0,725, 0,861, 0,963), stdev = 0,122
+  Confidence interval (99.9%): [-1,370, 3,091]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedChars500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62215]
+# Run progress: 23,61% complete, ETA 00:05:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,831 ops/s
+# Warmup Iteration   2: 119,085 ops/s
+# Warmup Iteration   3: 127,355 ops/s
+Iteration   1: 128,494 ops/s
+Iteration   2: 129,322 ops/s
+Iteration   3: 129,510 ops/s
+
+
+Result: 129,108 ±(99.9%) 9,863 ops/s [Average]
+  Statistics: (min, avg, max) = (128,494, 129,108, 129,510), stdev = 0,541
+  Confidence interval (99.9%): [119,245, 138,972]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedChars5000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62218]
+# Run progress: 25,00% complete, ETA 00:05:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,851 ops/s
+# Warmup Iteration   2: 11,044 ops/s
+# Warmup Iteration   3: 11,644 ops/s
+Iteration   1: 12,008 ops/s
+Iteration   2: 11,904 ops/s
+Iteration   3: 11,925 ops/s
+
+
+Result: 11,945 ±(99.9%) 1,002 ops/s [Average]
+  Statistics: (min, avg, max) = (11,904, 11,945, 12,008), stdev = 0,055
+  Confidence interval (99.9%): [10,944, 12,947]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.objectmodelapi.BenchmarkJsonReader.readCombinedChars50000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62220]
+# Run progress: 26,39% complete, ETA 00:05:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,462 ops/s
+# Warmup Iteration   2: 0,999 ops/s
+# Warmup Iteration   3: 0,839 ops/s
+Iteration   1: 1,068 ops/s
+Iteration   2: 0,976 ops/s
+Iteration   3: 1,053 ops/s
+
+
+Result: 1,033 ±(99.9%) 0,902 ops/s [Average]
+  Statistics: (min, avg, max) = (0,976, 1,033, 1,068), stdev = 0,049
+  Confidence interval (99.9%): [0,130, 1,935]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100000InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62223]
+# Run progress: 27,78% complete, ETA 00:05:34
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100000InFile(BenchmarkGenerator.java:188)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen100000InFile.gen100000InFile_thrpt_jmhStub(BenchmarkGenerator_gen100000InFile.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen100000InFile.gen100000InFile_Throughput(BenchmarkGenerator_gen100000InFile.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10000InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62225]
+# Run progress: 29,17% complete, ETA 00:05:15
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10000InFile(BenchmarkGenerator.java:180)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen10000InFile.gen10000InFile_thrpt_jmhStub(BenchmarkGenerator_gen10000InFile.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen10000InFile.gen10000InFile_Throughput(BenchmarkGenerator_gen10000InFile.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10000InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62227]
+# Run progress: 30,56% complete, ETA 00:04:58
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10000InMem(BenchmarkGenerator.java:139)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen10000InMem.gen10000InMem_thrpt_jmhStub(BenchmarkGenerator_gen10000InMem.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen10000InMem.gen10000InMem_Throughput(BenchmarkGenerator_gen10000InMem.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1000InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62229]
+# Run progress: 31,94% complete, ETA 00:04:42
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1000InFile(BenchmarkGenerator.java:172)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen1000InFile.gen1000InFile_thrpt_jmhStub(BenchmarkGenerator_gen1000InFile.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen1000InFile.gen1000InFile_Throughput(BenchmarkGenerator_gen1000InFile.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1000InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62231]
+# Run progress: 33,33% complete, ETA 00:04:27
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1000InMem(BenchmarkGenerator.java:132)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen1000InMem.gen1000InMem_thrpt_jmhStub(BenchmarkGenerator_gen1000InMem.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen1000InMem.gen1000InMem_Throughput(BenchmarkGenerator_gen1000InMem.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62233]
+# Run progress: 34,72% complete, ETA 00:04:13
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100InFile(BenchmarkGenerator.java:164)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen100InFile.gen100InFile_thrpt_jmhStub(BenchmarkGenerator_gen100InFile.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen100InFile.gen100InFile_Throughput(BenchmarkGenerator_gen100InFile.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62236]
+# Run progress: 36,11% complete, ETA 00:04:00
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen100InMem(BenchmarkGenerator.java:125)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen100InMem.gen100InMem_thrpt_jmhStub(BenchmarkGenerator_gen100InMem.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen100InMem.gen100InMem_Throughput(BenchmarkGenerator_gen100InMem.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62239]
+# Run progress: 37,50% complete, ETA 00:03:48
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10InFile(BenchmarkGenerator.java:156)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen10InFile.gen10InFile_thrpt_jmhStub(BenchmarkGenerator_gen10InFile.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen10InFile.gen10InFile_Throughput(BenchmarkGenerator_gen10InFile.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62241]
+# Run progress: 38,89% complete, ETA 00:03:37
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen10InMem(BenchmarkGenerator.java:118)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen10InMem.gen10InMem_thrpt_jmhStub(BenchmarkGenerator_gen10InMem.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen10InMem.gen10InMem_Throughput(BenchmarkGenerator_gen10InMem.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1InFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62243]
+# Run progress: 40,28% complete, ETA 00:03:27
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1InFile(BenchmarkGenerator.java:148)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen1InFile.gen1InFile_thrpt_jmhStub(BenchmarkGenerator_gen1InFile.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen1InFile.gen1InFile_Throughput(BenchmarkGenerator_gen1InFile.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1InMem
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62246]
+# Run progress: 41,67% complete, ETA 00:03:17
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.generate(BenchmarkGenerator.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkGenerator.gen1InMem(BenchmarkGenerator.java:111)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen1InMem.gen1InMem_thrpt_jmhStub(BenchmarkGenerator_gen1InMem.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkGenerator_gen1InMem.gen1InMem_Throughput(BenchmarkGenerator_gen1InMem.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.deserializeCollectionBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62248]
+# Run progress: 43,06% complete, ETA 00:03:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 20,295 ops/s
+# Warmup Iteration   2: 1316,703 ops/s
+# Warmup Iteration   3: 1468,397 ops/s
+Iteration   1: 1575,069 ops/s
+Iteration   2: 1586,498 ops/s
+Iteration   3: 1595,220 ops/s
+
+
+Result: 1585,596 ±(99.9%) 184,364 ops/s [Average]
+  Statistics: (min, avg, max) = (1575,069, 1585,596, 1595,220), stdev = 10,106
+  Confidence interval (99.9%): [1401,232, 1769,960]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.deserializeCollectionChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62250]
+# Run progress: 44,44% complete, ETA 00:03:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 20,827 ops/s
+# Warmup Iteration   2: 1598,930 ops/s
+# Warmup Iteration   3: 1854,701 ops/s
+Iteration   1: 1890,993 ops/s
+Iteration   2: 1910,256 ops/s
+Iteration   3: 1920,495 ops/s
+
+
+Result: 1907,248 ±(99.9%) 273,278 ops/s [Average]
+  Statistics: (min, avg, max) = (1890,993, 1907,248, 1920,495), stdev = 14,979
+  Confidence interval (99.9%): [1633,971, 2180,526]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.deserializeCollectionFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62252]
+# Run progress: 45,83% complete, ETA 00:03:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 919,116 ops/s
+# Warmup Iteration   2: 1291,990 ops/s
+# Warmup Iteration   3: 1364,839 ops/s
+Iteration   1: 1324,287 ops/s
+Iteration   2: 1406,087 ops/s
+Iteration   3: 1414,324 ops/s
+
+
+Result: 1381,566 ±(99.9%) 908,095 ops/s [Average]
+  Statistics: (min, avg, max) = (1324,287, 1381,566, 1414,324), stdev = 49,776
+  Confidence interval (99.9%): [473,471, 2289,661]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.deserializeSimpleBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62255]
+# Run progress: 47,22% complete, ETA 00:03:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 178,130 ops/s
+# Warmup Iteration   2: 12190,393 ops/s
+# Warmup Iteration   3: 15697,862 ops/s
+Iteration   1: 15697,592 ops/s
+Iteration   2: 16101,111 ops/s
+Iteration   3: 16214,759 ops/s
+
+
+Result: 16004,488 ±(99.9%) 4958,383 ops/s [Average]
+  Statistics: (min, avg, max) = (15697,592, 16004,488, 16214,759), stdev = 271,786
+  Confidence interval (99.9%): [11046,105, 20962,871]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.deserializeSimpleChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62258]
+# Run progress: 48,61% complete, ETA 00:02:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 201,148 ops/s
+# Warmup Iteration   2: 15919,730 ops/s
+# Warmup Iteration   3: 18689,063 ops/s
+Iteration   1: 19099,681 ops/s
+Iteration   2: 19237,084 ops/s
+Iteration   3: 19262,667 ops/s
+
+
+Result: 19199,811 ±(99.9%) 1599,128 ops/s [Average]
+  Statistics: (min, avg, max) = (19099,681, 19199,811, 19262,667), stdev = 87,654
+  Confidence interval (99.9%): [17600,683, 20798,939]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.deserializeSimpleFile
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62262]
+# Run progress: 50,00% complete, ETA 00:02:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 6369,205 ops/s
+# Warmup Iteration   2: 10189,580 ops/s
+# Warmup Iteration   3: 10885,294 ops/s
+Iteration   1: 11334,852 ops/s
+Iteration   2: 12267,285 ops/s
+Iteration   3: 12280,272 ops/s
+
+
+Result: 11960,803 ±(99.9%) 9890,444 ops/s [Average]
+  Statistics: (min, avg, max) = (11334,852, 11960,803, 12280,272), stdev = 542,129
+  Confidence interval (99.9%): [2070,359, 21851,247]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.serializeCollectionBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62264]
+# Run progress: 51,39% complete, ETA 00:02:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 10,890 ops/s
+# Warmup Iteration   2: 710,096 ops/s
+# Warmup Iteration   3: 890,203 ops/s
+Iteration   1: 927,915 ops/s
+Iteration   2: 962,719 ops/s
+Iteration   3: 976,569 ops/s
+
+
+Result: 955,735 ±(99.9%) 457,328 ops/s [Average]
+  Statistics: (min, avg, max) = (927,915, 955,735, 976,569), stdev = 25,068
+  Confidence interval (99.9%): [498,406, 1413,063]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.serializeCollectionChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62266]
+# Run progress: 52,78% complete, ETA 00:02:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 17,357 ops/s
+# Warmup Iteration   2: 1106,607 ops/s
+# Warmup Iteration   3: 1286,886 ops/s
+Iteration   1: 1349,794 ops/s
+Iteration   2: 1449,291 ops/s
+Iteration   3: 1457,091 ops/s
+
+
+Result: 1418,726 ±(99.9%) 1091,406 ops/s [Average]
+  Statistics: (min, avg, max) = (1349,794, 1418,726, 1457,091), stdev = 59,824
+  Confidence interval (99.9%): [327,319, 2510,132]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.serializeSimpleBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62269]
+# Run progress: 54,17% complete, ETA 00:02:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 112,201 ops/s
+# Warmup Iteration   2: 7042,092 ops/s
+# Warmup Iteration   3: 8919,333 ops/s
+Iteration   1: 9561,723 ops/s
+Iteration   2: 9957,183 ops/s
+Iteration   3: 9990,962 ops/s
+
+
+Result: 9836,623 ±(99.9%) 4354,202 ops/s [Average]
+  Statistics: (min, avg, max) = (9561,723, 9836,623, 9990,962), stdev = 238,668
+  Confidence interval (99.9%): [5482,421, 14190,825]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkSerialize.serializeSimpleChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62272]
+# Run progress: 55,56% complete, ETA 00:02:39
+# Fork: 1 of 1
+# Warmup Iteration   1: 145,102 ops/s
+# Warmup Iteration   2: 10494,152 ops/s
+# Warmup Iteration   3: 12975,326 ops/s
+Iteration   1: 13352,165 ops/s
+Iteration   2: 14624,524 ops/s
+Iteration   3: 14637,634 ops/s
+
+
+Result: 14204,774 ±(99.9%) 13471,361 ops/s [Average]
+  Statistics: (min, avg, max) = (13352,165, 14204,774, 14637,634), stdev = 738,411
+  Confidence interval (99.9%): [733,414, 27676,135]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62274]
+# Run progress: 56,94% complete, ETA 00:02:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,790 ops/s
+# Warmup Iteration   2: 3,242 ops/s
+# Warmup Iteration   3: 5,744 ops/s
+Iteration   1: 5,469 ops/s
+Iteration   2: 6,017 ops/s
+Iteration   3: 5,617 ops/s
+
+
+Result: 5,701 ±(99.9%) 5,169 ops/s [Average]
+  Statistics: (min, avg, max) = (5,469, 5,701, 6,017), stdev = 0,283
+  Confidence interval (99.9%): [0,532, 10,870]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kBytesUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62276]
+# Run progress: 58,33% complete, ETA 00:02:31
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected ':' at line 2 column 2 path $. 
+	at com.google.gson.internal.Streams.parse(Streams.java:56)
+	at com.google.gson.JsonStreamParser.next(JsonStreamParser.java:87)
+	at de.saly.json.jsr353.benchmark.gson.GsonParser.parseOnly(GsonParser.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kBytesUTF16(BenchmarkStreamParser.java:89)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStreamParser_parseOnly10000kBytesUTF16.parseOnly10000kBytesUTF16_thrpt_jmhStub(BenchmarkStreamParser_parseOnly10000kBytesUTF16.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStreamParser_parseOnly10000kBytesUTF16.parseOnly10000kBytesUTF16_Throughput(BenchmarkStreamParser_parseOnly10000kBytesUTF16.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.google.gson.stream.MalformedJsonException: Expected ':' at line 2 column 2 path $. 
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1573)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:534)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:429)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:644)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:667)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:642)
+	at com.google.gson.internal.Streams.parse(Streams.java:44)
+	... 15 more
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62278]
+# Run progress: 59,72% complete, ETA 00:02:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,794 ops/s
+# Warmup Iteration   2: 2,953 ops/s
+# Warmup Iteration   3: 5,311 ops/s
+Iteration   1: 6,509 ops/s
+Iteration   2: 6,347 ops/s
+Iteration   3: 6,605 ops/s
+
+
+Result: 6,487 ±(99.9%) 2,383 ops/s [Average]
+  Statistics: (min, avg, max) = (6,347, 6,487, 6,605), stdev = 0,131
+  Confidence interval (99.9%): [4,103, 8,870]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10000kCharsUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62281]
+# Run progress: 61,11% complete, ETA 00:02:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,787 ops/s
+# Warmup Iteration   2: 3,359 ops/s
+# Warmup Iteration   3: 5,733 ops/s
+Iteration   1: 6,391 ops/s
+Iteration   2: 6,773 ops/s
+Iteration   3: 6,837 ops/s
+
+
+Result: 6,667 ±(99.9%) 4,399 ops/s [Average]
+  Statistics: (min, avg, max) = (6,391, 6,667, 6,837), stdev = 0,241
+  Confidence interval (99.9%): [2,268, 11,066]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62284]
+# Run progress: 62,50% complete, ETA 00:02:16
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,725 ops/s
+# Warmup Iteration   2: 59,067 ops/s
+# Warmup Iteration   3: 62,737 ops/s
+Iteration   1: 64,439 ops/s
+Iteration   2: 61,743 ops/s
+Iteration   3: 64,696 ops/s
+
+
+Result: 63,626 ±(99.9%) 29,845 ops/s [Average]
+  Statistics: (min, avg, max) = (61,743, 63,626, 64,696), stdev = 1,636
+  Confidence interval (99.9%): [33,781, 93,471]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kBytesUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62286]
+# Run progress: 63,89% complete, ETA 00:02:12
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected ':' at line 2 column 2 path $. 
+	at com.google.gson.internal.Streams.parse(Streams.java:56)
+	at com.google.gson.JsonStreamParser.next(JsonStreamParser.java:87)
+	at de.saly.json.jsr353.benchmark.gson.GsonParser.parseOnly(GsonParser.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kBytesUTF16(BenchmarkStreamParser.java:76)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStreamParser_parseOnly1000kBytesUTF16.parseOnly1000kBytesUTF16_thrpt_jmhStub(BenchmarkStreamParser_parseOnly1000kBytesUTF16.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStreamParser_parseOnly1000kBytesUTF16.parseOnly1000kBytesUTF16_Throughput(BenchmarkStreamParser_parseOnly1000kBytesUTF16.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.google.gson.stream.MalformedJsonException: Expected ':' at line 2 column 2 path $. 
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1573)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:534)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:429)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:644)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:667)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:642)
+	at com.google.gson.internal.Streams.parse(Streams.java:44)
+	... 15 more
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62288]
+# Run progress: 65,28% complete, ETA 00:02:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,812 ops/s
+# Warmup Iteration   2: 65,887 ops/s
+# Warmup Iteration   3: 71,773 ops/s
+Iteration   1: 72,149 ops/s
+Iteration   2: 72,891 ops/s
+Iteration   3: 73,358 ops/s
+
+
+Result: 72,799 ±(99.9%) 11,127 ops/s [Average]
+  Statistics: (min, avg, max) = (72,149, 72,799, 73,358), stdev = 0,610
+  Confidence interval (99.9%): [61,672, 83,926]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1000kCharsUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62290]
+# Run progress: 66,67% complete, ETA 00:02:01
+# Fork: 1 of 1
+# Warmup Iteration   1: 1,722 ops/s
+# Warmup Iteration   2: 64,928 ops/s
+# Warmup Iteration   3: 66,178 ops/s
+Iteration   1: 70,887 ops/s
+Iteration   2: 72,993 ops/s
+Iteration   3: 70,857 ops/s
+
+
+Result: 71,579 ±(99.9%) 22,340 ops/s [Average]
+  Statistics: (min, avg, max) = (70,857, 71,579, 72,993), stdev = 1,225
+  Confidence interval (99.9%): [49,239, 93,919]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly100kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62293]
+# Run progress: 68,06% complete, ETA 00:01:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 10,819 ops/s
+# Warmup Iteration   2: 649,748 ops/s
+# Warmup Iteration   3: 693,092 ops/s
+Iteration   1: 713,566 ops/s
+Iteration   2: 709,490 ops/s
+Iteration   3: 712,796 ops/s
+
+
+Result: 711,951 ±(99.9%) 39,510 ops/s [Average]
+  Statistics: (min, avg, max) = (709,490, 711,951, 713,566), stdev = 2,166
+  Confidence interval (99.9%): [672,441, 751,460]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly100kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62295]
+# Run progress: 69,44% complete, ETA 00:01:52
+# Fork: 1 of 1
+# Warmup Iteration   1: 10,513 ops/s
+# Warmup Iteration   2: 754,245 ops/s
+# Warmup Iteration   3: 800,681 ops/s
+Iteration   1: 819,142 ops/s
+Iteration   2: 815,029 ops/s
+Iteration   3: 800,735 ops/s
+
+
+Result: 811,635 ±(99.9%) 176,256 ops/s [Average]
+  Statistics: (min, avg, max) = (800,735, 811,635, 819,142), stdev = 9,661
+  Confidence interval (99.9%): [635,379, 987,892]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62299]
+# Run progress: 70,83% complete, ETA 00:01:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 100,807 ops/s
+# Warmup Iteration   2: 7165,086 ops/s
+# Warmup Iteration   3: 7899,774 ops/s
+Iteration   1: 8166,726 ops/s
+Iteration   2: 8139,046 ops/s
+Iteration   3: 8230,951 ops/s
+
+
+Result: 8178,908 ±(99.9%) 860,149 ops/s [Average]
+  Statistics: (min, avg, max) = (8139,046, 8178,908, 8230,951), stdev = 47,148
+  Confidence interval (99.9%): [7318,759, 9039,057]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly10kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62301]
+# Run progress: 72,22% complete, ETA 00:01:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 108,076 ops/s
+# Warmup Iteration   2: 8461,670 ops/s
+# Warmup Iteration   3: 8973,988 ops/s
+Iteration   1: 9017,567 ops/s
+Iteration   2: 9147,627 ops/s
+Iteration   3: 9019,124 ops/s
+
+
+Result: 9061,439 ±(99.9%) 1361,801 ops/s [Average]
+  Statistics: (min, avg, max) = (9017,567, 9061,439, 9147,627), stdev = 74,645
+  Confidence interval (99.9%): [7699,638, 10423,241]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62303]
+# Run progress: 73,61% complete, ETA 00:01:38
+# Fork: 1 of 1
+# Warmup Iteration   1: 566,989 ops/s
+# Warmup Iteration   2: 64677,312 ops/s
+# Warmup Iteration   3: 75762,806 ops/s
+Iteration   1: 76340,320 ops/s
+Iteration   2: 75918,319 ops/s
+Iteration   3: 78193,308 ops/s
+
+
+Result: 76817,316 ±(99.9%) 22078,199 ops/s [Average]
+  Statistics: (min, avg, max) = (75918,319, 76817,316, 78193,308), stdev = 1210,181
+  Confidence interval (99.9%): [54739,117, 98895,514]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly1kChars
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62306]
+# Run progress: 75,00% complete, ETA 00:01:33
+# Fork: 1 of 1
+# Warmup Iteration   1: 874,420 ops/s
+# Warmup Iteration   2: 87935,051 ops/s
+# Warmup Iteration   3: 90736,388 ops/s
+Iteration   1: 94699,477 ops/s
+Iteration   2: 93907,975 ops/s
+Iteration   3: 97661,759 ops/s
+
+
+Result: 95423,070 ±(99.9%) 36099,597 ops/s [Average]
+  Statistics: (min, avg, max) = (93907,975, 95423,070, 97661,759), stdev = 1978,741
+  Confidence interval (99.9%): [59323,474, 131522,667]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly50000kBytes
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62309]
+# Run progress: 76,39% complete, ETA 00:01:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,386 ops/s
+# Warmup Iteration   2: 1,108 ops/s
+# Warmup Iteration   3: 1,100 ops/s
+Iteration   1: 1,187 ops/s
+Iteration   2: 1,178 ops/s
+Iteration   3: 1,102 ops/s
+
+
+Result: 1,156 ±(99.9%) 0,854 ops/s [Average]
+  Statistics: (min, avg, max) = (1,102, 1,156, 1,187), stdev = 0,047
+  Confidence interval (99.9%): [0,302, 2,009]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly50000kBytesUTF16
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62311]
+# Run progress: 77,78% complete, ETA 00:01:25
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Expected ':' at line 2 column 2 path $. 
+	at com.google.gson.internal.Streams.parse(Streams.java:56)
+	at com.google.gson.JsonStreamParser.next(JsonStreamParser.java:87)
+	at de.saly.json.jsr353.benchmark.gson.GsonParser.parseOnly(GsonParser.java:56)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnly50000kBytesUTF16(BenchmarkStreamParser.java:106)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStreamParser_parseOnly50000kBytesUTF16.parseOnly50000kBytesUTF16_thrpt_jmhStub(BenchmarkStreamParser_parseOnly50000kBytesUTF16.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStreamParser_parseOnly50000kBytesUTF16.parseOnly50000kBytesUTF16_Throughput(BenchmarkStreamParser_parseOnly50000kBytesUTF16.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.google.gson.stream.MalformedJsonException: Expected ':' at line 2 column 2 path $. 
+	at com.google.gson.stream.JsonReader.syntaxError(JsonReader.java:1573)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:534)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:429)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:644)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:667)
+	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:642)
+	at com.google.gson.internal.Streams.parse(Streams.java:44)
+	... 15 more
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedBytes500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62313]
+# Run progress: 79,17% complete, ETA 00:01:18
+# Fork: 1 of 1
+# Warmup Iteration   1: 2,753 ops/s
+# Warmup Iteration   2: 130,257 ops/s
+# Warmup Iteration   3: 139,734 ops/s
+Iteration   1: 141,998 ops/s
+Iteration   2: 141,643 ops/s
+Iteration   3: 140,859 ops/s
+
+
+Result: 141,500 ±(99.9%) 10,633 ops/s [Average]
+  Statistics: (min, avg, max) = (140,859, 141,500, 141,998), stdev = 0,583
+  Confidence interval (99.9%): [130,867, 152,133]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedBytes500FileInput
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62315]
+# Run progress: 80,56% complete, ETA 00:01:13
+# Fork: 1 of 1
+# Warmup Iteration   1: 95,511 ops/s
+# Warmup Iteration   2: 118,292 ops/s
+# Warmup Iteration   3: 106,635 ops/s
+Iteration   1: 121,799 ops/s
+Iteration   2: 122,882 ops/s
+Iteration   3: 122,081 ops/s
+
+
+Result: 122,254 ±(99.9%) 10,249 ops/s [Average]
+  Statistics: (min, avg, max) = (121,799, 122,254, 122,882), stdev = 0,562
+  Confidence interval (99.9%): [112,005, 132,502]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars200
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62318]
+# Run progress: 81,94% complete, ETA 00:01:08
+# Fork: 1 of 1
+# Warmup Iteration   1: 5,416 ops/s
+# Warmup Iteration   2: 393,872 ops/s
+# Warmup Iteration   3: 418,781 ops/s
+Iteration   1: 430,890 ops/s
+Iteration   2: 426,513 ops/s
+Iteration   3: 427,448 ops/s
+
+
+Result: 428,284 ±(99.9%) 42,047 ops/s [Average]
+  Statistics: (min, avg, max) = (426,513, 428,284, 430,890), stdev = 2,305
+  Confidence interval (99.9%): [386,237, 470,330]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62322]
+# Run progress: 83,33% complete, ETA 00:01:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 2,634 ops/s
+# Warmup Iteration   2: 137,197 ops/s
+# Warmup Iteration   3: 147,416 ops/s
+Iteration   1: 148,757 ops/s
+Iteration   2: 149,419 ops/s
+Iteration   3: 150,035 ops/s
+
+
+Result: 149,404 ±(99.9%) 11,654 ops/s [Average]
+  Statistics: (min, avg, max) = (148,757, 149,404, 150,035), stdev = 0,639
+  Confidence interval (99.9%): [137,750, 161,058]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars5000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62324]
+# Run progress: 84,72% complete, ETA 00:00:58
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,841 ops/s
+# Warmup Iteration   2: 12,334 ops/s
+# Warmup Iteration   3: 13,223 ops/s
+Iteration   1: 13,579 ops/s
+Iteration   2: 13,593 ops/s
+Iteration   3: 14,546 ops/s
+
+
+Result: 13,906 ±(99.9%) 10,117 ops/s [Average]
+  Statistics: (min, avg, max) = (13,579, 13,906, 14,546), stdev = 0,555
+  Confidence interval (99.9%): [3,789, 24,023]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars50000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62327]
+# Run progress: 86,11% complete, ETA 00:00:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 0,426 ops/s
+# Warmup Iteration   2: 1,081 ops/s
+# Warmup Iteration   3: 1,139 ops/s
+Iteration   1: 1,318 ops/s
+Iteration   2: 1,311 ops/s
+Iteration   3: 1,238 ops/s
+
+
+Result: 1,289 ±(99.9%) 0,802 ops/s [Average]
+  Statistics: (min, avg, max) = (1,238, 1,289, 1,318), stdev = 0,044
+  Confidence interval (99.9%): [0,487, 2,091]
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly10000kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62334]
+# Run progress: 87,50% complete, ETA 00:00:49
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parse(BenchmarkStructureParser.java:51)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly10000kIM(BenchmarkStructureParser.java:85)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly10000kIM.parseOnly10000kIM_thrpt_jmhStub(BenchmarkStructureParser_parseOnly10000kIM.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly10000kIM.parseOnly10000kIM_Throughput(BenchmarkStructureParser_parseOnly10000kIM.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly1000kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62336]
+# Run progress: 88,89% complete, ETA 00:00:43
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parse(BenchmarkStructureParser.java:51)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly1000kIM(BenchmarkStructureParser.java:80)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly1000kIM.parseOnly1000kIM_thrpt_jmhStub(BenchmarkStructureParser_parseOnly1000kIM.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly1000kIM.parseOnly1000kIM_Throughput(BenchmarkStructureParser_parseOnly1000kIM.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly100kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62338]
+# Run progress: 90,28% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parse(BenchmarkStructureParser.java:51)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly100kIM(BenchmarkStructureParser.java:75)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly100kIM.parseOnly100kIM_thrpt_jmhStub(BenchmarkStructureParser_parseOnly100kIM.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly100kIM.parseOnly100kIM_Throughput(BenchmarkStructureParser_parseOnly100kIM.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly10kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62341]
+# Run progress: 91,67% complete, ETA 00:00:31
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parse(BenchmarkStructureParser.java:51)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly10kIM(BenchmarkStructureParser.java:70)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly10kIM.parseOnly10kIM_thrpt_jmhStub(BenchmarkStructureParser_parseOnly10kIM.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly10kIM.parseOnly10kIM_Throughput(BenchmarkStructureParser_parseOnly10kIM.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly1kIM
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62343]
+# Run progress: 93,06% complete, ETA 00:00:25
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parse(BenchmarkStructureParser.java:51)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnly1kIM(BenchmarkStructureParser.java:65)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly1kIM.parseOnly1kIM_thrpt_jmhStub(BenchmarkStructureParser_parseOnly1kIM.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnly1kIM.parseOnly1kIM_Throughput(BenchmarkStructureParser_parseOnly1kIM.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM200
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62345]
+# Run progress: 94,44% complete, ETA 00:00:20
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parse(BenchmarkStructureParser.java:51)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM200(BenchmarkStructureParser.java:90)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnlyCombinedIM200.parseOnlyCombinedIM200_thrpt_jmhStub(BenchmarkStructureParser_parseOnlyCombinedIM200.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnlyCombinedIM200.parseOnlyCombinedIM200_Throughput(BenchmarkStructureParser_parseOnlyCombinedIM200.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM500
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62347]
+# Run progress: 95,83% complete, ETA 00:00:15
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parse(BenchmarkStructureParser.java:51)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM500(BenchmarkStructureParser.java:115)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnlyCombinedIM500.parseOnlyCombinedIM500_thrpt_jmhStub(BenchmarkStructureParser_parseOnlyCombinedIM500.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnlyCombinedIM500.parseOnlyCombinedIM500_Throughput(BenchmarkStructureParser_parseOnlyCombinedIM500.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM5000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62349]
+# Run progress: 97,22% complete, ETA 00:00:10
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parse(BenchmarkStructureParser.java:51)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM5000(BenchmarkStructureParser.java:125)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnlyCombinedIM5000.parseOnlyCombinedIM5000_thrpt_jmhStub(BenchmarkStructureParser_parseOnlyCombinedIM5000.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnlyCombinedIM5000.parseOnlyCombinedIM5000_Throughput(BenchmarkStructureParser_parseOnlyCombinedIM5000.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# JMH 1.4.1 (released 20 days ago)
+# VM invoker: /Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2048m -Dfile.encoding=utf-8 -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM50000
+
+Forking 1 times using command: [/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/bin/java, -Xmx2048m, -Dfile.encoding=utf-8, -Dbenchmark.impl=de.saly.json.jsr353.benchmark.gson.GsonParser, -XX:CompileCommandFile=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/jmh7792530211855136921compilecommand, -cp, target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 62351]
+# Run progress: 98,61% complete, ETA 00:00:04
+# Fork: 1 of 1
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parse(BenchmarkStructureParser.java:51)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.BenchmarkStructureParser.parseOnlyCombinedIM50000(BenchmarkStructureParser.java:135)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnlyCombinedIM50000.parseOnlyCombinedIM50000_thrpt_jmhStub(BenchmarkStructureParser_parseOnlyCombinedIM50000.java:113)
+	at de.saly.json.jsr353.benchmark.jmh.streamingapi.generated.BenchmarkStructureParser_parseOnlyCombinedIM50000.parseOnlyCombinedIM50000_Throughput(BenchmarkStructureParser_parseOnlyCombinedIM50000.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:187)
+	at org.openjdk.jmh.runner.LoopBenchmarkHandler$BenchmarkTask.call(LoopBenchmarkHandler.java:169)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+
+
+# Run complete. Total time: 00:05:54
+
+Benchmark                                                                             Mode  Samples      Score       Error  Units
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10000kBytes                       thrpt        3      4,196 ±     5,331  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10000kChars                       thrpt        3      5,117 ±     2,428  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10000kCharsUTF16                  thrpt        3      5,237 ±     0,879  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1000kBytes                        thrpt        3     55,616 ±     1,556  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1000kChars                        thrpt        3     59,647 ±    11,578  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1000kCharsUTF16                   thrpt        3     60,234 ±     4,501  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read100kBytes                         thrpt        3    581,615 ±    37,757  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read100kChars                         thrpt        3    648,990 ±    78,589  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10kBytes                          thrpt        3   6511,230 ±   138,316  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read10kChars                          thrpt        3   7162,155 ±   936,174  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1kBytes                           thrpt        3  62929,954 ± 14607,011  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.read1kChars                           thrpt        3  73419,357 ± 14095,729  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.readCombinedBytes500                  thrpt        3    113,877 ±    54,197  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.readCombinedBytes5000                 thrpt        3     10,958 ±     0,717  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.readCombinedBytes50000                thrpt        3      0,861 ±     2,231  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.readCombinedChars500                  thrpt        3    129,108 ±     9,863  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.readCombinedChars5000                 thrpt        3     11,945 ±     1,002  ops/s
+d.s.j.j.b.j.objectmodelapi.BenchmarkJsonReader.readCombinedChars50000                thrpt        3      1,033 ±     0,902  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.deserializeCollectionBytes               thrpt        3   1585,596 ±   184,364  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.deserializeCollectionChars               thrpt        3   1907,248 ±   273,278  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.deserializeCollectionFile                thrpt        3   1381,566 ±   908,095  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.deserializeSimpleBytes                   thrpt        3  16004,488 ±  4958,383  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.deserializeSimpleChars                   thrpt        3  19199,811 ±  1599,128  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.deserializeSimpleFile                    thrpt        3  11960,803 ±  9890,444  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.serializeCollectionBytes                 thrpt        3    955,735 ±   457,328  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.serializeCollectionChars                 thrpt        3   1418,726 ±  1091,406  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.serializeSimpleBytes                     thrpt        3   9836,623 ±  4354,202  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkSerialize.serializeSimpleChars                     thrpt        3  14204,774 ± 13471,361  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10000kBytes                  thrpt        3      5,701 ±     5,169  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10000kChars                  thrpt        3      6,487 ±     2,383  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10000kCharsUTF16             thrpt        3      6,667 ±     4,399  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1000kBytes                   thrpt        3     63,626 ±    29,845  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1000kChars                   thrpt        3     72,799 ±    11,127  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1000kCharsUTF16              thrpt        3     71,579 ±    22,340  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly100kBytes                    thrpt        3    711,951 ±    39,510  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly100kChars                    thrpt        3    811,635 ±   176,256  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10kBytes                     thrpt        3   8178,908 ±   860,149  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly10kChars                     thrpt        3   9061,439 ±  1361,801  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1kBytes                      thrpt        3  76817,316 ± 22078,199  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly1kChars                      thrpt        3  95423,070 ± 36099,597  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnly50000kBytes                  thrpt        3      1,156 ±     0,854  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedBytes500             thrpt        3    141,500 ±    10,633  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedBytes500FileInput    thrpt        3    122,254 ±    10,249  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars200             thrpt        3    428,284 ±    42,047  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars500             thrpt        3    149,404 ±    11,654  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars5000            thrpt        3     13,906 ±    10,117  ops/s
+d.s.j.j.b.j.streamingapi.BenchmarkStreamParser.parseOnlyCombinedChars50000           thrpt        3      1,289 ±     0,802  ops/s
+
+Benchmark result is saved to jmh_benchmark_thrpt_result_de.saly.json.jsr353.benchmark.gson.GsonParser_f1_t1_w3_i3_t20150114-2139.txt

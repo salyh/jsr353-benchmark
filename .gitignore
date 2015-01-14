@@ -17,7 +17,7 @@ generated/
 .settings/
 .classpath
 .project
-*benchmark*result*.txt
-*benchmark*thrpt*.txt
-jmh_benchmark_sysout*
-charts/
+/*benchmark*result*.txt
+/*benchmark*thrpt*.txt
+/jmh_benchmark_sysout*
+/charts/

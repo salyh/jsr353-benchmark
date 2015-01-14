@@ -1,0 +1,454 @@
+Start benchmark on Wed Jan 14 21:39:42 CET 2015
+------------------------------------------------------------------------------------
+GC Info:
+PS Scavenge
+java.lang:type=GarbageCollector,name=PS Scavenge
+
+PS MarkSweep
+java.lang:type=GarbageCollector,name=PS MarkSweep
+
+
+
+Env:
+TERM=xterm-256color
+SHLVL=1
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
+TERM_PROGRAM_VERSION=343
+MAVEN_HOME=/Users/salyh/devel/apache-maven-3.2.3
+TERM_PROGRAM=Apple_Terminal
+__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x3
+XPC_FLAGS=0x0
+PWD=/Users/salyh/devel/git/jsr353-benchmark
+TERM_SESSION_ID=70CF0DEE-3BB9-470F-BC3F-83151C7F3F08
+LOGNAME=salyh
+_=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java
+SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.cTay6UADBf/Listeners
+OLDPWD=/Users/salyh/devel/git
+SHELL=/bin/bash
+JAVA_MAIN_CLASS_35022=de.saly.json.jsr353.benchmark.jmh.BenchmarkMain
+TMPDIR=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/
+MAVEN_OPTS=-Xmx768m -XX:MaxPermSize=256M -XX:ReservedCodeCacheSize=64m -Xss2048k
+M2_HOME=/Users/salyh/devel/apache-maven-3.2.3
+PATH=/opt/local/bin:/opt/local/sbin:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/salyh/devel/apache-maven-3.2.3/bin
+MVN_HOME=/Users/salyh/devel/apache-maven-3.2.3
+USER=salyh
+HOME=/Users/salyh
+XPC_SERVICE_NAME=0
+Apple_PubSub_Socket_Render=/private/tmp/com.apple.launchd.D6IQeg9uX0/Render
+LANG=de_DE.UTF-8
+
+
+Props:
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib
+java.vm.version=24.71-b01
+gopherProxySet=false
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=:
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=DE
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=unknown
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/Users/salyh/devel/git/jsr353-benchmark
+java.runtime.version=1.7.0_71-b14
+java.awt.graphicsenv=sun.awt.CGraphicsEnvironment
+java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/endorsed
+os.arch=x86_64
+java.io.tmpdir=/var/folders/mm/9q_f92b17f77grcctvk2dfc00000gn/T/
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+os.name=Mac OS X
+sun.jnu.encoding=UTF-8
+java.library.path=/Users/salyh/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+java.specification.name=Java Platform API Specification
+java.class.version=51.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=10.10.1
+http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16
+user.home=/Users/salyh
+user.timezone=Europe/Berlin
+java.awt.printerjob=sun.lwawt.macosx.CPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.7
+java.class.path=target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar
+user.name=salyh
+java.vm.specification.version=1.7
+sun.java.command=target/json-parser-benchmark-1.0-SNAPSHOT-jar-with-dependencies.jar
+java.home=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre
+sun.arch.data.model=64
+user.language=de
+java.specification.vendor=Oracle Corporation
+awt.toolkit=sun.lwawt.macosx.LWCToolkit
+java.vm.info=mixed mode
+java.version=1.7.0_71
+java.ext.dirs=/Users/salyh/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java
+sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/classes
+java.vendor=Oracle Corporation
+file.separator=/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.io.unicode.encoding=UnicodeBig
+sun.cpu.endian=little
+socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16
+ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16
+sun.cpu.isalist=
+
+
+------------------------------------------------------------------------------------
+Currently benchmarking: Jackson
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+Currently benchmarking: GSON
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+Currently benchmarking: Apache Johnzon
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+Currently benchmarking: Glassfish JSR 353 RI (JSONP)
+------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+Currently benchmarking: Genson
+------------------------------------------------------------------------------------
+End. Benchmark Runtime was approx 35 min.
+ -Gson
+   -read10000kBytes
+   -read10000kChars
+   -read10000kCharsUTF16
+   -read1000kBytes
+   -read1000kChars
+   -read1000kCharsUTF16
+   -read100kBytes
+   -read100kChars
+   -read10kBytes
+   -read10kChars
+   -read1kBytes
+   -read1kChars
+   -readCombinedBytes500
+   -readCombinedBytes5000
+   -readCombinedBytes50000
+   -readCombinedChars500
+   -readCombinedChars5000
+   -readCombinedChars50000
+   -deserializeCollectionBytes
+   -deserializeCollectionChars
+   -deserializeCollectionFile
+   -deserializeSimpleBytes
+   -deserializeSimpleChars
+   -deserializeSimpleFile
+   -serializeCollectionBytes
+   -serializeCollectionChars
+   -serializeSimpleBytes
+   -serializeSimpleChars
+   -parseOnly10000kBytes
+   -parseOnly10000kChars
+   -parseOnly10000kCharsUTF16
+   -parseOnly1000kBytes
+   -parseOnly1000kChars
+   -parseOnly1000kCharsUTF16
+   -parseOnly100kBytes
+   -parseOnly100kChars
+   -parseOnly10kBytes
+   -parseOnly10kChars
+   -parseOnly1kBytes
+   -parseOnly1kChars
+   -parseOnly50000kBytes
+   -parseOnlyCombinedBytes500
+   -parseOnlyCombinedBytes500FileInput
+   -parseOnlyCombinedChars200
+   -parseOnlyCombinedChars500
+   -parseOnlyCombinedChars5000
+   -parseOnlyCombinedChars50000
+ -Jackson
+   -read10000kBytes
+   -read10000kBytesUTF16
+   -read10000kChars
+   -read10000kCharsUTF16
+   -read1000kBytes
+   -read1000kBytesUTF16
+   -read1000kChars
+   -read1000kCharsUTF16
+   -read100kBytes
+   -read100kChars
+   -read10kBytes
+   -read10kChars
+   -read1kBytes
+   -read1kChars
+   -readCombinedBytes500
+   -readCombinedBytes5000
+   -readCombinedBytes50000
+   -readCombinedChars500
+   -readCombinedChars5000
+   -readCombinedChars50000
+   -deserializeCollectionBytes
+   -deserializeCollectionChars
+   -deserializeCollectionFile
+   -deserializeSimpleBytes
+   -deserializeSimpleChars
+   -deserializeSimpleFile
+   -serializeCollectionBytes
+   -serializeCollectionChars
+   -serializeSimpleBytes
+   -serializeSimpleChars
+   -parseOnly10000kBytes
+   -parseOnly10000kBytesUTF16
+   -parseOnly10000kChars
+   -parseOnly10000kCharsUTF16
+   -parseOnly1000kBytes
+   -parseOnly1000kBytesUTF16
+   -parseOnly1000kChars
+   -parseOnly1000kCharsUTF16
+   -parseOnly100kBytes
+   -parseOnly100kChars
+   -parseOnly10kBytes
+   -parseOnly10kChars
+   -parseOnly1kBytes
+   -parseOnly1kChars
+   -parseOnly50000kBytes
+   -parseOnly50000kBytesUTF16
+   -parseOnlyCombinedBytes500
+   -parseOnlyCombinedBytes500FileInput
+   -parseOnlyCombinedChars200
+   -parseOnlyCombinedChars500
+   -parseOnlyCombinedChars5000
+   -parseOnlyCombinedChars50000
+ -Genson
+   -read10000kBytes
+   -read10000kChars
+   -read10000kCharsUTF16
+   -read1000kBytes
+   -read1000kChars
+   -read1000kCharsUTF16
+   -read100kBytes
+   -read100kChars
+   -read10kBytes
+   -read10kChars
+   -read1kBytes
+   -read1kChars
+   -readCombinedBytes500
+   -readCombinedBytes5000
+   -readCombinedBytes50000
+   -readCombinedChars500
+   -readCombinedChars5000
+   -readCombinedChars50000
+   -gen100000InFile
+   -gen10000InFile
+   -gen10000InMem
+   -gen1000InFile
+   -gen1000InMem
+   -gen100InFile
+   -gen100InMem
+   -gen10InFile
+   -gen10InMem
+   -gen1InFile
+   -gen1InMem
+   -deserializeCollectionBytes
+   -deserializeCollectionChars
+   -deserializeCollectionFile
+   -deserializeSimpleBytes
+   -deserializeSimpleChars
+   -deserializeSimpleFile
+   -serializeCollectionBytes
+   -serializeCollectionChars
+   -serializeSimpleBytes
+   -serializeSimpleChars
+   -parseOnly10000kBytes
+   -parseOnly10000kChars
+   -parseOnly10000kCharsUTF16
+   -parseOnly1000kBytes
+   -parseOnly1000kChars
+   -parseOnly1000kCharsUTF16
+   -parseOnly100kBytes
+   -parseOnly100kChars
+   -parseOnly10kBytes
+   -parseOnly10kChars
+   -parseOnly1kBytes
+   -parseOnly1kChars
+   -parseOnly50000kBytes
+   -parseOnlyCombinedBytes500
+   -parseOnlyCombinedBytes500FileInput
+   -parseOnlyCombinedChars200
+   -parseOnlyCombinedChars500
+   -parseOnlyCombinedChars5000
+   -parseOnlyCombinedChars50000
+   -parseOnly10000kIM
+   -parseOnly1000kIM
+   -parseOnly100kIM
+   -parseOnly10kIM
+   -parseOnly1kIM
+   -parseOnlyCombinedIM200
+   -parseOnlyCombinedIM500
+   -parseOnlyCombinedIM5000
+   -parseOnlyCombinedIM50000
+ -Johnzon
+   -read10000kBytes
+   -read10000kBytesUTF16
+   -read10000kChars
+   -read10000kCharsUTF16
+   -read1000kBytes
+   -read1000kBytesUTF16
+   -read1000kChars
+   -read1000kCharsUTF16
+   -read100kBytes
+   -read100kChars
+   -read10kBytes
+   -read10kChars
+   -read1kBytes
+   -read1kChars
+   -readCombinedBytes500
+   -readCombinedBytes5000
+   -readCombinedBytes50000
+   -readCombinedChars500
+   -readCombinedChars5000
+   -readCombinedChars50000
+   -gen100000InFile
+   -gen10000InFile
+   -gen10000InMem
+   -gen1000InFile
+   -gen1000InMem
+   -gen100InFile
+   -gen100InMem
+   -gen10InFile
+   -gen10InMem
+   -gen1InFile
+   -gen1InMem
+   -deserializeCollectionBytes
+   -deserializeCollectionChars
+   -deserializeCollectionFile
+   -deserializeSimpleBytes
+   -deserializeSimpleChars
+   -deserializeSimpleFile
+   -serializeCollectionBytes
+   -serializeCollectionChars
+   -serializeSimpleBytes
+   -serializeSimpleChars
+   -parseOnly10000kBytes
+   -parseOnly10000kBytesUTF16
+   -parseOnly10000kChars
+   -parseOnly10000kCharsUTF16
+   -parseOnly1000kBytes
+   -parseOnly1000kBytesUTF16
+   -parseOnly1000kChars
+   -parseOnly1000kCharsUTF16
+   -parseOnly100kBytes
+   -parseOnly100kChars
+   -parseOnly10kBytes
+   -parseOnly10kChars
+   -parseOnly1kBytes
+   -parseOnly1kChars
+   -parseOnly50000kBytes
+   -parseOnly50000kBytesUTF16
+   -parseOnlyCombinedBytes500
+   -parseOnlyCombinedBytes500FileInput
+   -parseOnlyCombinedChars200
+   -parseOnlyCombinedChars500
+   -parseOnlyCombinedChars5000
+   -parseOnlyCombinedChars50000
+   -parseOnly10000kIM
+   -parseOnly1000kIM
+   -parseOnly100kIM
+   -parseOnly10kIM
+   -parseOnly1kIM
+   -parseOnlyCombinedIM200
+   -parseOnlyCombinedIM500
+   -parseOnlyCombinedIM5000
+   -parseOnlyCombinedIM50000
+ -JsonpRi
+   -read10000kBytes
+   -read10000kBytesUTF16
+   -read10000kChars
+   -read10000kCharsUTF16
+   -read1000kBytes
+   -read1000kBytesUTF16
+   -read1000kChars
+   -read1000kCharsUTF16
+   -read100kBytes
+   -read100kChars
+   -read10kBytes
+   -read10kChars
+   -read1kBytes
+   -read1kChars
+   -readCombinedBytes500
+   -readCombinedBytes5000
+   -readCombinedBytes50000
+   -readCombinedChars500
+   -readCombinedChars5000
+   -readCombinedChars50000
+   -gen100000InFile
+   -gen10000InFile
+   -gen10000InMem
+   -gen1000InFile
+   -gen1000InMem
+   -gen100InFile
+   -gen100InMem
+   -gen10InFile
+   -gen10InMem
+   -gen1InFile
+   -gen1InMem
+   -parseOnly10000kBytes
+   -parseOnly10000kBytesUTF16
+   -parseOnly10000kChars
+   -parseOnly10000kCharsUTF16
+   -parseOnly1000kBytes
+   -parseOnly1000kBytesUTF16
+   -parseOnly1000kChars
+   -parseOnly1000kCharsUTF16
+   -parseOnly100kBytes
+   -parseOnly100kChars
+   -parseOnly10kBytes
+   -parseOnly10kChars
+   -parseOnly1kBytes
+   -parseOnly1kChars
+   -parseOnly50000kBytes
+   -parseOnly50000kBytesUTF16
+   -parseOnlyCombinedBytes500
+   -parseOnlyCombinedBytes500FileInput
+   -parseOnlyCombinedChars200
+   -parseOnlyCombinedChars500
+   -parseOnlyCombinedChars5000
+   -parseOnlyCombinedChars50000
+   -parseOnly10000kIM
+   -parseOnly1000kIM
+   -parseOnly100kIM
+   -parseOnly10kIM
+   -parseOnly1kIM
+   -parseOnlyCombinedIM200
+   -parseOnlyCombinedIM500
+   -parseOnlyCombinedIM5000
+   -parseOnlyCombinedIM50000
+Chart for deserializeCollectionBytes
+Chart for deserializeCollectionChars
+Chart for deserializeCollectionFile
+Chart for deserializeSimpleBytes
+Chart for deserializeSimpleChars
+Chart for deserializeSimpleFile
+Chart for gen100000InFile
+Chart for gen10000InFile
+Chart for gen10000InMem
+Chart for gen1000InFile
+Chart for gen1000InMem
+Chart for gen100InFile
+Chart for gen100InMem
+Chart for gen10InFile
+Chart for gen10InMem
+Chart for gen1InFile
+Chart for gen1InMem
+Chart for parseOnly10000kBytes
+Chart for parseOnly10000kBytesUTF16
+Chart for parseOnly10000kChars
+Chart for parseOnly10000kCharsUTF16
+Chart for parseOnly10000kIM
+Chart for parseOnly1000kBytes
+Chart for parseOnly1000kBytesUTF16
+Chart for parseOnly1000kChars
+Chart for parseOnly1000kCharsUTF16
+Chart for parseOnly1000kIM
+Chart for parseOnly100kBytes
+Chart for parseOnly100kChars
+Chart for parseOnly100kIM
+Chart for parseOnly10kBytes
+Chart for parseOnly10kChars
+Chart for parseOnly10kIM
+Chart for parseOnly1kBytes
