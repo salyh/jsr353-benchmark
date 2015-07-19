@@ -53,6 +53,7 @@ public class BenchmarkMain {
     private static final Map<String, String> parsers = new LinkedHashMap<String, String>();
 
     static {
+        parsers.put("Jackson (pgelinas)", "de.saly.json.jsr353.benchmark.jsr353.JacksonPgelinasJSR353");
         parsers.put("Jackson", "de.saly.json.jsr353.benchmark.jackson.JacksonParser");
         parsers.put("GSON", "de.saly.json.jsr353.benchmark.gson.GsonParser");
         parsers.put("Apache Johnzon", "de.saly.json.jsr353.benchmark.jsr353.JohnzonParser");
